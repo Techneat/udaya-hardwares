@@ -1,0 +1,40 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'Udaya Hardwares'
+theme = 'udaya-hardwares'
+
+[menu]
+    [[menu.main]]
+    name = 'Home'
+    url = '/'
+    weight = 10
+
+    [[menu.main]]
+    name = 'About Udaya'
+    url = '/about-us'
+    weight = 20
+
+    [[menu.main]]
+    name = 'Shop'
+    url = '/shop'
+    weight = 30
+
+    [[menu.main]]
+    name = 'Brands'
+    url = '/brands'
+    weight = 40
+
+    [[menu.main]]
+    name = 'Branches'
+    url = '/branches'
+    weight = 50
+
+    [[menu.main]]
+    name = 'Enquiry'
+    url = '/enquiry'
+    weight = 60
+
+    [[menu.main]]
+    name = 'Contact Us'
+    url = '/contact-us'
+    weight = 70
