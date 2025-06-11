@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/branches/</loc>
+    <lastmod>2025-06-10T06:51:57+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/branches/branch3/</loc>
+    <lastmod>2025-06-06T11:40:43+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/branches/branch2/</loc>
+    <lastmod>2025-06-06T11:40:36+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/branches/branch1/</loc>
+    <lastmod>2025-06-06T11:40:27+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/enquiry/</loc>
+    <lastmod>2025-06-06T07:18:56+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/contact-us/</loc>
+    <lastmod>2025-05-30T10:39:05+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/tags/blue/</loc>
     <lastmod>2023-03-15T11:00:00-07:00</lastmod>
   </url><url>
