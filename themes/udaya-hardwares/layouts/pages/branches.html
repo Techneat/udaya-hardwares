@@ -51,7 +51,7 @@
 
         <div class="container">
             <div class="row">
-                <div class="col-md-6 text-start py-4">
+                <div class="col-md-8 text-start py-4">
                     <h1 class="enquiry_hero_heading display-2 fw-medium" style="color: #FAEACB;">Branches</h1>
                     <h2 class="enquiry_hero_subheading lh-base py-3 pb-4" style="color: #fff;">At Udaya Hardwares, we take pride in beling your go-to source for all things hardware.</h2>
                     <div class="enquiry_btn_div d-flex w-50 justify-content-between">
@@ -66,7 +66,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="col-md-6 hero_imgs_div d-flex">
+                <!-- <div class="col-md-4 hero_imgs_div d-flex">
                     <div class="">
                         <img src="/imgs/hero_img_1.png" alt="" class="hero_img_1">
                     </div>
@@ -96,6 +96,7 @@
             {{ range ( where .Site.RegularPages.ByDate "Type" "branches" ) }}
             <div class="col-md-4 p-4 branches_div">
                 <div>
+
                     <img src="/imgs/branches_img.png" alt="" class="w-100">
                 </div>
                 <div>
@@ -110,7 +111,13 @@
             </div>
             {{ end }}
         </div>
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center">
+                <button class="branches_view_btn fs-4">View More</button>
+            </div>
+        </div>
     </div>
+
 </section>
 
 {{end}}
