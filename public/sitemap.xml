@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/about-us/</loc>
+    <lastmod>2025-06-17T12:50:37+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/branches/</loc>
     <lastmod>2025-06-10T06:51:57+00:00</lastmod>
   </url><url>
