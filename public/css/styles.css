@@ -463,7 +463,7 @@ footer {
     
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 769px) and (max-width: 991px) {
     /* HERO BANNER SECTION & HOME PAGE */
     .hero_img_1, .hero_img_2 {
         width: 100%;
@@ -498,11 +498,20 @@ footer {
     }
 }
 
-@media (min-width: 576px) and (max-width: 767px) {
+@media (min-width: 576px) and (max-width: 768px) {
     /* HERO BANNER SECTION & HOME PAGE */
     .hero_img_1, .hero_img_2 {
-        display: none;
+        width: 100%;
     }
+    .hero_img_2 {
+        top: 8rem;
+        left: 0rem;
+    }
+    .hero_img_1 {
+        top: 4rem;
+        left: -2rem;
+    }
+
     /* .hero_div {
         border: none;
     } */
@@ -514,7 +523,33 @@ footer {
     }
     .what_we_sell_container {
         top: -10%;
-        left: 12%;
+        left: 4%;
+    }
+    
+    .send_msg_btn {
+        width: 100%;
+    }
+    
+}
+
+@media (max-width: 575px) {
+    /* HERO BANNER SECTION & HOME PAGE */
+    .hero_img_1, .hero_img_2 {
+        display: none;
+    }
+
+    /* .hero_div {
+        border: none;
+    } */
+    .enquiry_hero_banner {
+        padding: 1rem 0.5rem;
+    }
+    .enquiry_btn_div, .contact_btn_div {
+        width: 90%;
+    }
+    .what_we_sell_container {
+        top: -10%;
+        left: 2%;
     }
     
     .send_msg_btn {
