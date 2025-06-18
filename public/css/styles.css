@@ -144,7 +144,7 @@ footer {
     border-bottom: 1px solid #fff;
 }
 
-.enquiry_btn_div, .contact_btn_div {
+.enquiry_btn_div, .contact_btn_div, .send_msg_btn {
     background-color: #C6850A;
     color: #fff;
     border: none;
@@ -195,6 +195,7 @@ footer {
     /* padding: 4rem; */
     /* margin-bottom: 5rem; */
     height: 90vh;
+    border: 2px solid #FFF;
 }
 
 /* BRANCHES PAGE */
@@ -260,6 +261,11 @@ footer {
     background-color: #C6850A;
 }
 
+.what_we_sell_container {
+    top: -10%;
+    left: 15%;
+}
+
 .we_offer_img_div {
     background: linear-gradient(rgba(57, 40, 7, 0.6), rgba(57, 40, 7, .6)), url('/imgs/we_offer_img.png');
     background-size: cover;
@@ -310,6 +316,11 @@ footer {
 
 }
 
+.reach_out_text {
+    width: 40%;
+    color: #FFF;
+}
+
 .yellow_banner_icon {
     background-color: #FAD795;
     border-radius: 50%;
@@ -333,9 +344,19 @@ footer {
     /* object-fit: cover; */
 }
 
+/* ABOUT PAGE */
+.vision_mission_div {
+    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .2)), url('/imgs/vision_mission_img.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* height: 80vh; */
+    border-radius: 16px;
+}
 
 
-/* -----------------------------------------------------------HOME PAGE ANIMATIONS------------------------------------------------------------- */
+
+/* -----------------------------------------------------------ALL PAGE ANIMATIONS------------------------------------------------------------- */
 
 /* Base styles for animated elements */
 .animated-element {
@@ -384,7 +405,120 @@ footer {
     transition-delay: 0s;
 }
 
-/* -----------------------------------------------------------END HOME PAGE ANIMATIONS------------------------------------------------------------- */
+/* --------------------------------------------------------------END ANIMATIONS----------------------------------------------------------- */
 
-/* -----------------------------------------------------------ENQUIRY PAGE ANIMATIONS------------------------------------------------------------- */
 
+/* --------------------------------------------------------------MEDIA QUERIES----------------------------------------------------------- */
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+    /* HERO BANNER SECTION */
+    .hero_img_1, .hero_img_2 {
+        width: 90%;
+    }
+    .hero_img_2 {
+        top: 6rem;
+        left: 6rem;
+    }
+    .hero_img_1 {
+        top: 2rem;
+        left: 2rem;
+    }
+    .enquiry_hero_banner {
+        padding: 1rem 2rem;
+        
+    }
+    .enquiry_btn_div, .contact_btn_div, .send_msg_btn {
+        width: 50%;
+    }
+    .what_we_sell_container {
+        top: -5%;
+        left: 10%;
+    }
+    
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    /* HERO BANNER SECTION & HOME PAGE */
+    .hero_img_1, .hero_img_2 {
+        width: 100%;
+    }
+    .hero_img_2 {
+        top: 6rem;
+        left: 4rem;
+    }
+    .hero_img_1 {
+        top: 2rem;
+        left: 1rem;
+    }
+    .enquiry_hero_banner {
+        padding: 1rem 1rem;
+    }
+    .enquiry_btn_div, .contact_btn_div, .send_msg_btn {
+        width: 50%;
+    }
+    .what_we_sell_container {
+        top: -10%;
+        left: 10%;
+    }
+    
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /* HERO BANNER SECTION & HOME PAGE */
+    .hero_img_1, .hero_img_2 {
+        width: 100%;
+    }
+    .hero_img_2 {
+        top: 6rem;
+        left: 4rem;
+    }
+    .hero_img_1 {
+        top: 2rem;
+        left: 1rem;
+    }
+    .enquiry_hero_banner {
+        padding: 1rem 0.5rem;
+    }
+    .enquiry_btn_div, .contact_btn_div {
+        width: 60%;
+    }
+    .what_we_sell_container {
+        top: -10%;
+        left: 12%;
+    }
+    .carousel_img_div img {
+        height: 200px;
+    }
+    
+    .send_msg_btn {
+        width: 100%;
+    }
+    .reach_out_text {
+        width: 80%;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    /* HERO BANNER SECTION & HOME PAGE */
+    .hero_img_1, .hero_img_2 {
+        display: none;
+    }
+    /* .hero_div {
+        border: none;
+    } */
+    .enquiry_hero_banner {
+        padding: 1rem 0.5rem;
+    }
+    .enquiry_btn_div, .contact_btn_div {
+        width: 80%;
+    }
+    .what_we_sell_container {
+        top: -10%;
+        left: 12%;
+    }
+    
+    .send_msg_btn {
+        width: 100%;
+    }
+    
+}
