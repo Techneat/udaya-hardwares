@@ -360,7 +360,7 @@ footer {
 /* -----------------------------------------------------------ALL PAGE ANIMATIONS------------------------------------------------------------- */
 
 /* Base styles for animated elements */
-/* .animated-element {
+.animated-element {
     opacity: 0;
     transition: opacity 0.8s ease-out, transform 0.8s ease-out;
     will-change: opacity, transform;
@@ -404,7 +404,7 @@ footer {
 
 .animated-element.is-visible:nth-child(odd) {
     transition-delay: 0s;
-} */
+}
 
 /* --------------------------------------------------------------END ANIMATIONS----------------------------------------------------------- */
 
@@ -535,6 +535,10 @@ footer {
     .send_msg_btn {
         width: 100%;
     }
+    .slide-right {
+    transform: translateY(-50px); 
+    opacity: 0;
+}
     
 }
 
@@ -546,11 +550,11 @@ footer {
 
     .hero_div {
         /* border: none; */
-        height: 60vh;
+        height: 70vh;
     }
     .enquiry_hero_banner {
         padding: 1rem 0.5rem;
-        height: 65vh;
+        height: 75vh;
     }
     .enquiry_btn_div, .contact_btn_div {
         width: 90%;
