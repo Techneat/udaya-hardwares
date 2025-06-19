@@ -5,7 +5,7 @@ body {
     margin: 0;
     min-height: 100vh;
     background-color: #18100B;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
 ul {
     list-style-type: none;
@@ -512,11 +512,11 @@ footer {
     }
     .hero_div {
         /* border: none; */
-        height: 45vh;
+        height: 60vh;
     }
     .enquiry_hero_banner {
         padding: 1rem 0.5rem;
-        max-height: 50vh;
+        max-height: 65vh;
     }
     .enquiry_btn_div, .contact_btn_div {
         width: 90%;
@@ -546,11 +546,11 @@ footer {
 
     .hero_div {
         /* border: none; */
-        height: 45vh;
+        height: 60vh;
     }
     .enquiry_hero_banner {
         padding: 1rem 0.5rem;
-        height: 50vh;
+        height: 65vh;
     }
     .enquiry_btn_div, .contact_btn_div {
         width: 90%;
