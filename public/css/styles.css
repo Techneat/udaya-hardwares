@@ -360,51 +360,51 @@ footer {
 /* -----------------------------------------------------------ALL PAGE ANIMATIONS------------------------------------------------------------- */
 
 /* Base styles for animated elements */
-.animated-element {
+/* .animated-element {
     opacity: 0;
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out; /* Base transition */
-    will-change: opacity, transform; /* Optimize for animation */
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    will-change: opacity, transform;
 }
 
-/* Specific animation styles */
+
 .fade-in {
     opacity: 0;
 }
 
 .slide-up {
-    transform: translateY(50px); /* Start 50px down */
+    transform: translateY(50px); 
     opacity: 0;
 }
 
 .slide-left {
-    transform: translateX(50px); /* Start 50px right */
+    transform: translateX(50px); 
     opacity: 0;
 }
 
 .slide-right {
-    transform: translateX(-50px); /* Start 50px left */
+    transform: translateX(-50px); 
     opacity: 0;
 }
 
 .zoom-in {
-    transform: scale(0.9); /* Start 90% size */
+    transform: scale(0.9); 
     opacity: 0;
 }
 
-/* State when element is visible and animated */
+
 .animated-element.is-visible {
     opacity: 1;
-    transform: none; /* Reset transform to natural state */
+    transform: none;
 }
 
-/* Optional: Add a subtle delay for chained animations */
+
 .animated-element.is-visible:nth-child(even) {
     transition-delay: 0.1s;
 }
 
 .animated-element.is-visible:nth-child(odd) {
     transition-delay: 0s;
-}
+} */
 
 /* --------------------------------------------------------------END ANIMATIONS----------------------------------------------------------- */
 
@@ -565,10 +565,13 @@ footer {
         left: 0%;
     }
     .yellow_banner_div {
-        height: 70vh;
+        height: 75vh;
     }
     .send_msg_btn {
         width: 100%;
+    }
+    .navbar_logo_img {
+        width: 12rem;
     }
     
 }
