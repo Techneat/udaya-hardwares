@@ -574,3 +574,19 @@ footer {
     }
     
 }
+
+
+/* Disable offcanvas animation */
+.offcanvas,
+.offcanvas.show,
+.offcanvas-backdrop {
+  transition: none !important;
+  animation: none !important;
+}
+
+/* Optional: force immediate visibility */
+.offcanvas {
+  transform: none !important;
+  
+  opacity: 1 !important;
+}
