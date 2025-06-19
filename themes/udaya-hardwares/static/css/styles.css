@@ -577,5 +577,8 @@ footer {
     .navbar_logo_img {
         width: 12rem;
     }
+    .slide-right {
+    transform: translateY(-50px); 
+    opacity: 0;
     
 }
