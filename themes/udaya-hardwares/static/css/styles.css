@@ -5,6 +5,7 @@ body {
     margin: 0;
     min-height: 100vh;
     background-color: #18100B;
+    overflow-x: hidden;
 }
 ul {
     list-style-type: none;
@@ -410,18 +411,18 @@ footer {
 
 /* --------------------------------------------------------------MEDIA QUERIES----------------------------------------------------------- */
 
-@media (min-width: 1200px) and (max-width: 1400px) {
+@media (min-width: 1200px) {
     /* HERO BANNER SECTION */
     .hero_img_1, .hero_img_2 {
         width: 90%;
     }
     .hero_img_2 {
-        top: 6rem;
-        left: 6rem;
+        top: 8rem;
+        left: 2rem;
     }
     .hero_img_1 {
         top: 2rem;
-        left: 2rem;
+        left: -2rem;
     }
     .enquiry_hero_banner {
         padding: 1rem 2rem;
@@ -432,7 +433,8 @@ footer {
     }
     .what_we_sell_container {
         top: -5%;
-        left: 10%;
+        left: 4%;
+    
     }
     
 }
@@ -440,15 +442,15 @@ footer {
 @media (min-width: 992px) and (max-width: 1199px) {
     /* HERO BANNER SECTION & HOME PAGE */
     .hero_img_1, .hero_img_2 {
-        width: 100%;
+        width: 90%;
     }
     .hero_img_2 {
-        top: 6rem;
-        left: 4rem;
+        top: 8rem;
+        left: 0rem;
     }
     .hero_img_1 {
         top: 2rem;
-        left: 1rem;
+        left: -3rem;
     }
     .enquiry_hero_banner {
         padding: 1rem 1rem;
@@ -458,33 +460,38 @@ footer {
     }
     .what_we_sell_container {
         top: -10%;
-        left: 10%;
+        left: 3%;
     }
     
 }
 
-@media (min-width: 769px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 991px) {
     /* HERO BANNER SECTION & HOME PAGE */
     .hero_img_1, .hero_img_2 {
-        width: 100%;
+        width: 90%;
     }
     .hero_img_2 {
-        top: 6rem;
-        left: 4rem;
+        top: 8rem;
+        left: 1rem;
     }
     .hero_img_1 {
-        top: 2rem;
-        left: 1rem;
+        top: 4rem;
+        left: -2rem;
+    }
+    .hero_div {
+        /* border: none; */
+        height: 65vh;
     }
     .enquiry_hero_banner {
         padding: 1rem 0.5rem;
+        max-height: 70vh;
     }
     .enquiry_btn_div, .contact_btn_div {
         width: 60%;
     }
     .what_we_sell_container {
         top: -10%;
-        left: 12%;
+        left: 4%;
     }
     .carousel_img_div img {
         height: 200px;
@@ -498,34 +505,33 @@ footer {
     }
 }
 
-@media (min-width: 576px) and (max-width: 768px) {
+@media (min-width: 576px) and (max-width: 767px) {
     /* HERO BANNER SECTION & HOME PAGE */
     .hero_img_1, .hero_img_2 {
-        width: 100%;
+        display: none;
     }
-    .hero_img_2 {
-        top: 8rem;
-        left: 0rem;
+    .hero_div {
+        /* border: none; */
+        height: 45vh;
     }
-    .hero_img_1 {
-        top: 4rem;
-        left: -2rem;
-    }
-
-    /* .hero_div {
-        border: none;
-    } */
     .enquiry_hero_banner {
         padding: 1rem 0.5rem;
+        max-height: 50vh;
     }
     .enquiry_btn_div, .contact_btn_div {
-        width: 80%;
+        width: 90%;
+    }
+    .home_what_we_sell_section {
+        margin-bottom: 8rem;
+        height: 100vh;
     }
     .what_we_sell_container {
         top: -10%;
-        left: 4%;
+        left: 15%;
     }
-    
+    .yellow_banner_div {
+        height: 70vh;
+    }
     .send_msg_btn {
         width: 100%;
     }
@@ -538,20 +544,29 @@ footer {
         display: none;
     }
 
-    /* .hero_div {
-        border: none;
-    } */
+    .hero_div {
+        /* border: none; */
+        height: 45vh;
+    }
     .enquiry_hero_banner {
         padding: 1rem 0.5rem;
+        height: 50vh;
     }
     .enquiry_btn_div, .contact_btn_div {
         width: 90%;
     }
+
+    .home_what_we_sell_section {
+        margin-bottom: 12rem;
+        height: 100vh;
+    }
     .what_we_sell_container {
         top: -10%;
-        left: 2%;
+        left: 0%;
     }
-    
+    .yellow_banner_div {
+        height: 70vh;
+    }
     .send_msg_btn {
         width: 100%;
     }

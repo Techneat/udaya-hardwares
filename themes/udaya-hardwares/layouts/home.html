@@ -1,6 +1,7 @@
 {{ define "main" }}
 
 <section id="home_section">
+    
     <div class="enquiry_hero_banner">
         <div class="hero_div">
             <!-- <nav class="navbar bg-body-tertiary navbar-expand-lg py-5 mt-3 animated-element fade-in">
@@ -77,20 +78,32 @@
             </div>
         </div>
     </div>
-    <div class="home_about_section py-5 my-5">
+
+    <div class="home_about_section py-md-5 my-md-5">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 animated-element slide-right align-self-center">
+                <div class="col-md-6 animated-element slide-right align-self-center d-none d-md-block">
                     <img src="/imgs/home_about_section_img.png" alt="" class="w-100">
                 </div>
                 <div class="col-md-6 animated-element slide-left">
                     <div class="row">
-                        <div class="col-12 justify-content-start d-flex my-4">
+                        <div class="col-12 justify-content-start d-none d-md-flex my-4">
                             <div class="d-flex align-items-center contact_heading_div py-3">
                                 <img src="/imgs/breadcrumb_icon.png" alt="breadcrumb_icon" style="height: 3rem;">
                                 <h1 class="text-center contact_heading mb-0 ps-3">About Us</h1>
                             </div>
                         </div>
+                        <div class="col-12 justify-content-center d-flex d-md-none my-4">
+                            <div class="d-flex align-items-center contact_heading_div py-3">
+                                <img src="/imgs/breadcrumb_icon.png" alt="breadcrumb_icon" style="height: 3rem;">
+                                <h1 class="text-center contact_heading mb-0 ps-3">About Us</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row d-block d-md-none">
+                        <div class="col-md-6 animated-element slide-right align-self-center">
+                    <img src="/imgs/home_about_section_img.png" alt="" class="w-100">
+                </div>
                     </div>
                     <div class="row">
                         <div class="col-12">
@@ -128,7 +141,7 @@
         <div class="container">
             <div class="row mb-5 pb-4 animated-element fade-in">
                 <div class="col-md-4 d-flex">
-                    <div class="d-flex align-items-center contact_heading_div py-3">
+                    <div class="d-flex align-items-center contact_heading_div py-3 mb-5 mb-md-0">
                         <img src="/imgs/breadcrumb_icon.png" alt="breadcrumb_icon" style="height: 3rem;">
                         <h1 class="text-center contact_heading mb-0 ps-3">We Offer</h1>
                     </div>
@@ -193,7 +206,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 animated-element slide-right">
-                    <div class="d-flex align-items-center contact_heading_div py-3 mb-5">
+                    <div class="d-none d-md-flex align-items-center contact_heading_div py-3 mb-5">
+                        <img src="/imgs/breadcrumb_icon.png" alt="breadcrumb_icon" style="height: 3rem;">
+                        <h1 class="text-center contact_heading mb-0 ps-3">Why Choose Us</h1>
+                    </div>
+                    <div class="d-flex d-md-none align-items-center contact_heading_div py-3 mb-5 justify-content-center">
                         <img src="/imgs/breadcrumb_icon.png" alt="breadcrumb_icon" style="height: 3rem;">
                         <h1 class="text-center contact_heading mb-0 ps-3">Why Choose Us</h1>
                     </div>
@@ -230,7 +247,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 animated-element slide-left align-self-center">
+                <div class="col-md-6 animated-element slide-left align-self-center py-4 py-md-none">
                     <div>
                         <img src="/imgs/home_why_choose_us_img.png" alt="" class="w-100">
                     </div>
@@ -280,7 +297,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 position-absolute" style="bottom: 0; right: 0;">
+                <div class="col-md-4 position-absolute d-none d-md-block" style="bottom: 0; right: 0;">
                     <img src="/imgs/main_background_img_man.png" alt="" class="w-100">
                 </div>
             </div>
@@ -298,7 +315,7 @@
                     <button class="right_btn"><i class="bi bi-arrow-right"></i></button>
                 </div>
             </div>
-            <div class="row mt-5 animated-element slide-up">
+            <div class="row mt-5 animated-element slide-up d-none d-md-flex">
                 <div class="col-3 carousel_img_div">
                     <img src="/imgs/sanitarywares_img.png" alt="" class="w-100">
                 </div>
@@ -309,6 +326,18 @@
                     <img src="/imgs/sanitarywares_img.png" alt="" class="w-100">
                 </div>
             </div>
+
+            <div class="row mt-5 animated-element slide-up d-flex d-md-none">
+                <div class="col-12 carousel_img_div">
+                    <img src="/imgs/sanitarywares_img.png" alt="" class="w-100">
+                </div>
+                <!-- <div class="col-6 carousel_img_div">
+                    <img src="/imgs/sanitarywares_img.png" alt="" class="w-100">
+                </div>
+                <div class="col-3 carousel_img_div">
+                    <img src="/imgs/sanitarywares_img.png" alt="" class="w-100">
+                </div> -->
+            </div>
         </div>
 
     </div>
@@ -316,7 +345,7 @@
     <div class="home_popular_products_section pt-5">
         <div class="container-lg">
             <div class="row animated-element fade-in">
-                <div class="col-12">
+                <div class="col-12" style="padding: 4rem;">
                     <div class="d-flex justify-content-center my-4">
                         <div class="d-flex align-items-center contact_heading_div py-3">
                             <img src="/imgs/breadcrumb_icon.png" alt="breadcrumb_icon" style="height: 3rem;">
