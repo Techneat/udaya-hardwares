@@ -377,7 +377,7 @@ footer {
 }
 
 .slide-left {
-    transform: translateX(50px); 
+    transform: translateX(-50px); 
     opacity: 0;
 }
 
@@ -535,10 +535,6 @@ footer {
     .send_msg_btn {
         width: 100%;
     }
-    .slide-right {
-    transform: translateY(-50px); 
-    opacity: 0;
-}
     
 }
 
@@ -577,8 +573,5 @@ footer {
     .navbar_logo_img {
         width: 12rem;
     }
-    .slide-right {
-    transform: translateY(-50px); 
-    opacity: 0;
     
 }
