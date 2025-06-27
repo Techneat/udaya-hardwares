@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Latest-Products on Udaya Hardwares</title>
+    <link>http://localhost:1313/latest-product/</link>
+    <description>Recent content in Latest-Products on Udaya Hardwares</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 24 Jun 2025 06:30:17 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/latest-product/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Product Name</title>
+      <link>http://localhost:1313/latest-product/product-3/</link>
+      <pubDate>Tue, 24 Jun 2025 06:30:17 +0000</pubDate>
+      <guid>http://localhost:1313/latest-product/product-3/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Royal Statuario</title>
+      <link>http://localhost:1313/latest-product/product-2/</link>
+      <pubDate>Tue, 24 Jun 2025 06:30:11 +0000</pubDate>
+      <guid>http://localhost:1313/latest-product/product-2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Marron Emperador</title>
+      <link>http://localhost:1313/latest-product/product-1/</link>
+      <pubDate>Tue, 24 Jun 2025 06:30:06 +0000</pubDate>
+      <guid>http://localhost:1313/latest-product/product-1/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

@@ -1,9 +1,9 @@
 +++
 date = '2025-06-06T11:40:27Z'
 draft = true
-title = 'Branch1'
+title = 'Thingal Nagar'
 location = ''
 email = ''
-address = ''
-number = ''
+address = 'Near Bus Stand, Thingal Nagar'
+number = '94425 42298'
 +++

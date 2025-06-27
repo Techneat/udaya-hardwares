@@ -1,9 +1,9 @@
 +++
 date = '2025-06-06T11:40:36Z'
 draft = true
-title = 'Branch2'
+title = 'Marthandam'
 location = ''
 email = ''
-address = ''
-number = ''
+address = 'Main Road, Pammam, Marthandam'
+number = '75988 72498'
 +++

@@ -91,3 +91,195 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 10); // Update every 10ms
     }
 });
+
+
+// HOME PAGE CAROUSEL ANIMATION
+document.addEventListener('DOMContentLoaded', function() {
+
+        // Function to apply/remove middle-active class and scaling
+        function updateMiddleSlideEffect(swiperInstance) {
+            // Remove 'middle-active' from all slides first
+            swiperInstance.slides.forEach(slide => {
+                slide.classList.remove('middle-active');
+                slide.style.transform = 'scale(0.9)'; // Scale down all by default
+                if(slide.querySelector('img')) slide.querySelector('img').style.transform = 'scale(1)'; // Reset image scale
+            });
+
+            // Find the currently visible slides using Swiper's internal class
+            const visibleSlides = swiperInstance.slides.filter(slide => slide.classList.contains('swiper-slide-visible'));
+
+            let middleVisibleSlide = null;
+
+            // Determine the middle slide based on visible slides count
+            if (visibleSlides.length >= 3) {
+                // For 3 or more visible slides, the middle one is at index 1
+                middleVisibleSlide = visibleSlides[1];
+            } else if (visibleSlides.length === 2) {
+                // For 2 visible slides, let's make the first visible slide pop up (or adjust as desired)
+                middleVisibleSlide = visibleSlides[0]; 
+            } else if (visibleSlides.length === 1) {
+                // For a single visible slide (e.g., mobile), it is the active one
+                middleVisibleSlide = visibleSlides[0];
+            }
+
+            if (middleVisibleSlide) {
+                middleVisibleSlide.classList.add('middle-active'); // Add the custom class
+                middleVisibleSlide.style.transform = 'scale(1)'; // Scale up the slide
+                if(middleVisibleSlide.querySelector('img')) {
+                    middleVisibleSlide.querySelector('img').style.transform = 'scale(1.1)'; // Scale up the image
+                }
+            }
+        }
+
+
+        // --- Home Page Carousel Initialization ---
+        const homeSwiper = new Swiper('.mySanitaryCarousel', {
+            loop: true,
+            effect: 'slide',
+            slidesPerView: 3,
+            spaceBetween: 30,
+            autoplay: { // ADD THIS BLOCK for autoplay
+                delay: 3000, // Time in milliseconds (3 seconds) before next slide
+                disableOnInteraction: false, // Continue autoplay even if user interacts with carousel
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            on: {
+                init: function () { updateMiddleSlideEffect(this); },
+                slideChangeTransitionEnd: function () { updateMiddleSlideEffect(this); },
+                afterInit: function() { updateMiddleSlideEffect(this); },
+                resize: function() { updateMiddleSlideEffect(this); } // Re-evaluate on resize
+            },
+            breakpoints: {
+                0: { slidesPerView: 1, spaceBetween: 15 },
+                768: { slidesPerView: 2, spaceBetween: 20 },
+                992: { slidesPerView: 3, spaceBetween: 30 }
+            }
+        });
+
+        // --- About Page Carousel Initialization ---
+        const aboutSwiper = new Swiper('.myAboutPageCarousel', {
+            loop: true,
+            effect: 'slide',
+            slidesPerView: 3,
+            spaceBetween: 30,
+            autoplay: { // ADD THIS BLOCK for autoplay as well
+                delay: 4000, // You can have a different delay for this carousel (e.g., 4 seconds)
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: '.about_carousel_next',
+                prevEl: '.about_carousel_prev',
+            },
+            on: {
+                init: function () { updateMiddleSlideEffect(this); },
+                slideChangeTransitionEnd: function () { updateMiddleSlideEffect(this); },
+                afterInit: function() { updateMiddleSlideEffect(this); },
+                resize: function() { updateMiddleSlideEffect(this); }
+            },
+            breakpoints: {
+                0: { slidesPerView: 1, spaceBetween: 15 },
+                768: { slidesPerView: 2, spaceBetween: 20 },
+                992: { slidesPerView: 3, spaceBetween: 30 }
+            }
+        });
+    });
+
+    // ABOUT PAGE CAROUSEL JS
+    document.addEventListener('DOMContentLoaded', function() {
+
+        // Reusable function to apply/remove middle-active class and scaling
+        function updateMiddleSlideEffect(swiperInstance) {
+            // Remove 'middle-active' from all slides first
+            swiperInstance.slides.forEach(slide => {
+                slide.classList.remove('middle-active');
+                slide.style.transform = 'scale(0.9)'; // Scale down all by default
+                if(slide.querySelector('img')) slide.querySelector('img').style.transform = 'scale(1)'; // Reset image scale
+            });
+
+            // Find the currently visible slides using Swiper's internal class
+            const visibleSlides = swiperInstance.slides.filter(slide => slide.classList.contains('swiper-slide-visible'));
+
+            let middleVisibleSlide = null;
+
+            // Determine the middle slide based on visible slides count
+            if (visibleSlides.length >= 3) {
+                // For 3 or more visible slides, the middle one is at index 1
+                middleVisibleSlide = visibleSlides[1];
+            } else if (visibleSlides.length === 2) {
+                // For 2 visible slides, you might choose the first one to "pop"
+                middleVisibleSlide = visibleSlides[0]; 
+            } else if (visibleSlides.length === 1) {
+                // For a single visible slide (e.g., mobile), it is the active one
+                middleVisibleSlide = visibleSlides[0];
+            }
+
+            if (middleVisibleSlide) {
+                middleVisibleSlide.classList.add('middle-active'); // Add the custom class
+                middleVisibleSlide.style.transform = 'scale(1)'; // Scale up the slide
+                if(middleVisibleSlide.querySelector('img')) {
+                    middleVisibleSlide.querySelector('img').style.transform = 'scale(1.1)'; // Scale up the image
+                }
+            }
+        }
+
+
+        // --- Home Page Carousel Initialization (Keep this as is) ---
+        const homeSwiper = new Swiper('.mySanitaryCarousel', {
+            loop: true,
+            effect: 'slide',
+            slidesPerView: 3,
+            spaceBetween: 30,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            on: {
+                init: function () { updateMiddleSlideEffect(this); },
+                slideChangeTransitionEnd: function () { updateMiddleSlideEffect(this); },
+                afterInit: function() { updateMiddleSlideEffect(this); },
+                resize: function() { updateMiddleSlideEffect(this); }
+            },
+            breakpoints: {
+                0: { slidesPerView: 1, spaceBetween: 15 },
+                768: { slidesPerView: 2, spaceBetween: 20 },
+                992: { slidesPerView: 3, spaceBetween: 30 }
+            }
+        });
+
+        // --- About Page Carousel Initialization (NEW) ---
+        const aboutSwiper = new Swiper('.myAboutPageCarousel', { // Target the unique class
+            loop: true,
+            effect: 'slide',
+            slidesPerView: 3, // Display 3 slides at a time on larger screens
+            spaceBetween: 30, // Space between slides
+            autoplay: { // Autoplay for about page carousel
+                delay: 4000, // You can set a different delay for this carousel
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: '.about_carousel_next', // Target unique navigation class
+                prevEl: '.about_carousel_prev', // Target unique navigation class
+            },
+            on: {
+                init: function () { updateMiddleSlideEffect(this); },
+                slideChangeTransitionEnd: function () { updateMiddleSlideEffect(this); },
+                afterInit: function() { updateMiddleSlideEffect(this); },
+                resize: function() { updateMiddleSlideEffect(this); }
+            },
+            breakpoints: {
+                0: { slidesPerView: 1, spaceBetween: 15 },
+                768: { slidesPerView: 2, spaceBetween: 20 },
+                992: { slidesPerView: 3, spaceBetween: 30 }
+            }
+        });
+    });
+
+    // LOGO CAROUSEL ANIMATION
+    

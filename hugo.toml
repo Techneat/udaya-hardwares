@@ -20,6 +20,26 @@ theme = 'udaya-hardwares'
     weight = 30
 
     [[menu.main]]
+    name = 'Tiles'
+    url = '/shop/tiles'
+    weight = 31
+
+    [[menu.main]]
+    name = 'Sanitarywares'
+    url = '/shop/sanitarywares'
+    weight = 32
+
+    [[menu.main]]
+    name = 'Kitchenwares'
+    url = '/shop/kitchenwares'
+    weight = 33
+
+    [[menu.main]]
+    name = 'Hardwares'
+    url = '/shop/hardwares'
+    weight = 34
+
+    [[menu.main]]
     name = 'Brands'
     url = '/brands'
     weight = 40

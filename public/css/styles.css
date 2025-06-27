@@ -332,27 +332,195 @@ footer {
     padding: 4.5rem 0;
 }
 
-.right_btn, .left_btn {
+/* Global button styles for your custom buttons */
+.left_btn, .right_btn {
     padding: 1rem 2rem;
     background-color: transparent;
     border: 2px solid #FFF;
     color: #FFF;
+    cursor: pointer; /* Ensure buttons are clickable */
 }
 
-.carousel_img_div img {
-    height: 300px;
-    /* object-fit: cover; */
+/* Home Page Carousel Specific Button Positioning */
+.home-carousel-buttons-row .col-12 {
+    position: relative; /* Make this the positioning context for its children buttons */
+    height: 60px; /* Sufficient height for buttons */
+    display: flex;
+    justify-content: flex-end; /* Keeps your original flex alignment */
+    align-items: center; /* Vertically center buttons */
 }
 
-/* ABOUT PAGE */
+.swiper-button-prev.left_btn {
+    position: absolute;
+    left: 20px; /* Adjust as needed, considering mx-5 on the button */
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.swiper-button-next.right_btn {
+    position: absolute;
+    right: 20px; /* Adjust as needed, considering mx-5 on the button */
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+/* About Page Carousel Specific Button Positioning */
+.about-carousel-buttons-row .col-12 {
+    position: relative;
+    height: 60px; /* Sufficient height for buttons */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.about_carousel_prev {
+    position: absolute;
+    left: 20px; /* Adjust as needed */
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.about_carousel_next {
+    position: absolute;
+    right: 20px; /* Adjust as needed */
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+/* Hide Swiper's default arrows (crucial for your custom button icons) */
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    content: '' !important;
+    display: none !important;
+}
+
+/* Swiper Common Slide Styles */
+.swiper-slide {
+    width: auto; /* Swiper will manage width based on slidesPerView and spaceBetween */
+    height: 350px; /* Consistent height for all slides */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #231907; /* Default background for slides */
+    border-radius: 8px;
+    box-sizing: border-box;
+    transform: scale(0.9); /* Default scale for inactive slides */
+    transition: transform 0.3s ease-in-out; /* Smooth transition for scale */
+    padding: 15px; /* Add some internal padding to the slide content */
+}
+
+/* Styles for image inside slides */
+.swiper-slide img {
+    height: 300px; /* Adjust image height as needed */
+    object-fit: cover;
+    width: 100%;
+    margin-bottom: 10px; /* Space between image and text */
+    transition: transform 0.3s ease-in-out; /* Smooth transition for image scale */
+}
+
+/* Active middle slide specific style (applied by JS) */
+.swiper-slide.middle-active {
+    transform: scale(1); /* Bring middle slide to normal size */
+}
+
+.swiper-slide.middle-active img {
+    transform: scale(1.1); /* Make the image pop up */
+}
+
+/* Home Page Carousel Specific Container Styles */
+.mySanitaryCarousel {
+    width: 100%;
+    padding: 0 50px; /* Padding for prev/next slide visibility and button space */
+    position: relative; /* If buttons were within, or just for context */
+}
+
+/* About Page Carousel Specific Container Styles */
+.myAboutPageCarousel {
+    width: 100%;
+    padding: 0 50px; /* Adjust as needed */
+    margin-top: 2rem; /* Example margin from its button row */
+    position: relative;
+}
+
+/* Specific styling for the product carousel slides on About page */
+.product_carousel_slide {
+    background-color: #120C02; /* Slightly different background for product slides */
+    color: #FFF4E1; /* Text color */
+}
+
+.product_carousel_slide img {
+    height: 250px; /* Adjust product image height, could be different from sanitary images */
+    border-radius: 4px; /* Slightly rounded corners for product images */
+}
+
+.product_carousel_slide p {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.brands_logo_left {
+    border: 1px solid #FFF;
+    border-top: none;
+    border-left: none;
+}
+
+.brands_logo_top {
+    border: 1px solid #FFF;
+    border-top: none;
+}
+
+.brands_logo_right {
+    border: 1px solid #FFF;
+    border-top: none;
+    border-right: none;
+}
+
+.brands_logo_btm_left {
+    border: 1px solid #FFF;
+    border-bottom: none;
+    border-left: none;
+}
+
+.brands_logo_btm {
+    border: 1px solid #FFF;
+    border-bottom: none;
+}
+
+.brands_logo_btm_right {
+    border: 1px solid #FFF;
+    border-bottom: none;
+    border-right: none;
+}
+
+/* ABOUT PAGE GENERAL STYLES */
 .vision_mission_div {
-    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .2)), url('/imgs/vision_mission_img.png');
+    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url('/imgs/vision_mission_img.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    /* height: 80vh; */
-    border-radius: 16px;
+    height: 70vh;
+    border-radius: 20px;
 }
+
+.vision_mission_box {
+    border-radius: 40px 0 40px 0;
+    background-color: #FFE5B5;
+}
+
+.our_shop_main_section {
+    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url('/imgs/about-us-carousel-img.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 4rem 0;
+}
+
 
 
 
@@ -371,22 +539,22 @@ footer {
 }
 
 .slide-up {
-    transform: translateY(50px); 
+    transform: translateY(50px);
     opacity: 0;
 }
 
 .slide-left {
-    transform: translateX(-50px); 
+    transform: translateX(-50px);
     opacity: 0;
 }
 
 .slide-right {
-    transform: translateX(-50px); 
+    transform: translateX(-50px);
     opacity: 0;
 }
 
 .zoom-in {
-    transform: scale(0.9); 
+    transform: scale(0.9);
     opacity: 0;
 }
 
@@ -410,7 +578,7 @@ footer {
 
 /* --------------------------------------------------------------MEDIA QUERIES----------------------------------------------------------- */
 
-@media (min-width: 1200px) {
+@media (min-width: 1200px) and (max-width: 1440px) {
     /* HERO BANNER SECTION */
     .hero_img_1, .hero_img_2 {
         width: 90%;
@@ -425,7 +593,7 @@ footer {
     }
     .enquiry_hero_banner {
         padding: 1rem 2rem;
-        
+
     }
     .enquiry_btn_div, .contact_btn_div, .send_msg_btn {
         width: 50%;
@@ -433,9 +601,15 @@ footer {
     .what_we_sell_container {
         top: -5%;
         left: 4%;
-    
+
     }
-    
+    /* Carousel Specific */
+    .mySanitaryCarousel, .myAboutPageCarousel {
+        padding: 0 40px;
+    }
+    .swiper-slide { height: 320px; }
+    .swiper-slide img { height: 270px; }
+    .product_carousel_slide img { height: 220px; }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -461,7 +635,13 @@ footer {
         top: -10%;
         left: 3%;
     }
-    
+    /* Carousel Specific */
+    .mySanitaryCarousel, .myAboutPageCarousel {
+        padding: 0 30px;
+    }
+    .swiper-slide { height: 300px; }
+    .swiper-slide img { height: 250px; }
+    .product_carousel_slide img { height: 200px; }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -492,16 +672,23 @@ footer {
         top: -10%;
         left: 4%;
     }
-    .carousel_img_div img {
+    .carousel_img_div img { /* This might be redundant if using .swiper-slide img */
         height: 200px;
     }
-    
+
     .send_msg_btn {
         width: 100%;
     }
     .reach_out_text {
         width: 80%;
     }
+    /* Carousel Specific (Swiper breakpoints will handle slidesPerView) */
+    .mySanitaryCarousel, .myAboutPageCarousel {
+        padding: 0 20px; /* Reduced padding for narrower screens */
+    }
+    .swiper-slide { height: 280px; }
+    .swiper-slide img { height: 230px; }
+    .product_carousel_slide img { height: 180px; }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -534,7 +721,19 @@ footer {
     .send_msg_btn {
         width: 100%;
     }
-    
+    /* Carousel Specific (Swiper breakpoints will handle slidesPerView) */
+    .mySanitaryCarousel, .myAboutPageCarousel {
+        padding: 0 10px; /* Further reduced padding */
+    }
+    .swiper-slide { height: 260px; }
+    .swiper-slide img { height: 210px; }
+    .product_carousel_slide img { height: 160px; }
+    /* Adjust button positioning for smaller screens if needed */
+    .home-carousel-buttons-row .col-12, .about-carousel-buttons-row .col-12 {
+        height: 50px; /* Less height for buttons */
+    }
+    .swiper-button-prev.left_btn, .about_carousel_prev { left: 10px; }
+    .swiper-button-next.right_btn, .about_carousel_next { right: 10px; }
 }
 
 @media (max-width: 575px) {
@@ -572,21 +771,200 @@ footer {
     .navbar_logo_img {
         width: 12rem;
     }
-    
+    /* Carousel Specific (Swiper breakpoints will handle slidesPerView) */
+    .mySanitaryCarousel, .myAboutPageCarousel {
+        padding: 0 5px; /* Minimal padding */
+    }
+    .swiper-slide { height: 240px; }
+    .swiper-slide img { height: 190px; }
+    .product_carousel_slide img { height: 140px; }
+    /* Adjust button positioning for smallest screens */
+    .home-carousel-buttons-row .col-12, .about-carousel-buttons-row .col-12 {
+        height: 40px; /* Even less height */
+    }
+    .swiper-button-prev.left_btn, .about_carousel_prev { left: 5px; }
+    .swiper-button-next.right_btn, .about_carousel_next { right: 5px; }
+    .left_btn, .right_btn {
+        padding: 0.5rem 1rem; /* Smaller button padding */
+    }
 }
 
 
-/* Disable offcanvas animation */
-.offcanvas,
-.offcanvas.show,
-.offcanvas-backdrop {
-  transition: none !important;
-  animation: none !important;
+/* ABOUT PAGE CAROUSEL */
+/* ... (Your existing CSS from previous responses) ... */
+
+/* Global button styles for your custom buttons (should already be there) */
+.left_btn, .right_btn {
+    padding: 1rem 2rem;
+    background-color: transparent;
+    border: 2px solid #FFF;
+    color: #FFF;
+    cursor: pointer;
 }
 
-/* Optional: force immediate visibility */
-.offcanvas {
-  transform: none !important;
-  
-  opacity: 1 !important;
+/* Hide Swiper's default arrows (crucial for your custom button icons) */
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    content: '' !important;
+    display: none !important;
 }
+
+/* Common Swiper Slide Styles (these apply to all carousels unless overridden) */
+.swiper-slide {
+    width: auto;
+    height: 350px; /* Adjust as needed */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #231907; /* Default background for slides */
+    border-radius: 8px;
+    box-sizing: border-box;
+    transform: scale(0.9); /* Default scale for inactive slides */
+    transition: transform 0.3s ease-in-out; /* Smooth transition for scale */
+    padding: 15px; /* Internal padding for content */
+}
+
+/* Styles for image inside common slides */
+.swiper-slide img {
+    height: 300px; /* Adjust image height as needed */
+    object-fit: cover;
+    width: 100%;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Active middle slide specific style (applied by JS) */
+.swiper-slide.middle-active {
+    transform: scale(1); /* Bring middle slide to normal size */
+}
+
+.swiper-slide.middle-active img {
+    transform: scale(1.1); /* Make the image pop up */
+}
+
+
+/* --- Home Page Carousel Specific Styles --- */
+/* (These should already be in your CSS) */
+
+.home-carousel-buttons-row .col-12 {
+    position: relative;
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.swiper-button-prev.left_btn {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.swiper-button-next.right_btn {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.mySanitaryCarousel {
+    width: 100%;
+    padding: 0 50px;
+    position: relative;
+}
+
+/* --- About Page Carousel Specific Styles --- */
+
+.about-carousel-buttons-row .col-12 {
+    position: relative;
+    height: 60px; /* Ensure enough height for buttons */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.about_carousel_prev {
+    position: absolute;
+    left: 20px; /* Adjust positioning as needed */
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.about_carousel_next {
+    position: absolute;
+    right: 20px; /* Adjust positioning as needed */
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.myAboutPageCarousel {
+    width: 100%;
+    padding: 0 50px; /* Adjust padding if you want different spacing from home carousel */
+    margin-top: 2rem; /* Example: space below the buttons row */
+    position: relative;
+}
+
+/* Specific styling for the product carousel slides on About page */
+.product_carousel_slide {
+    background-color: #120C02; /* Example: slightly different background for product slides */
+    color: #FFF4E1; /* Text color */
+}
+
+.product_carousel_slide img {
+    height: 250px; /* Adjust product image height, potentially different from sanitary images */
+    border-radius: 4px; /* Slightly rounded corners for product images */
+}
+
+.product_carousel_slide p {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+
+/* --- Media Queries (Adjust for both carousels) --- */
+/* Ensure these blocks in your CSS are updated to apply to both carousels */
+
+@media (min-width: 992px) {
+    .mySanitaryCarousel, .myAboutPageCarousel {
+        padding: 0 50px;
+    }
+    .swiper-slide { height: 350px; }
+    .swiper-slide img { height: 300px; }
+    .product_carousel_slide img { height: 250px; } /* Specific for product images */
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .mySanitaryCarousel, .myAboutPageCarousel {
+        padding: 0 30px;
+    }
+    .swiper-slide { height: 300px; }
+    .swiper-slide img { height: 250px; }
+    .product_carousel_slide img { height: 200px; } /* Specific for product images */
+}
+
+@media (max-width: 767px) {
+    .mySanitaryCarousel, .myAboutPageCarousel {
+        padding: 0 10px;
+    }
+    .swiper-slide { height: 280px; }
+    .swiper-slide img { height: 230px; }
+    .product_carousel_slide img { height: 180px; } /* Specific for product images */
+    .home-carousel-buttons-row .col-12, .about-carousel-buttons-row .col-12 {
+        height: 50px;
+    }
+    .swiper-button-prev.left_btn, .about_carousel_prev { left: 5px; }
+    .swiper-button-next.right_btn, .about_carousel_next { right: 5px; }
+    .left_btn, .right_btn {
+        padding: 0.8rem 1.5rem;
+    }
+}
+
+/* LOGO CAROUSEL */
+
