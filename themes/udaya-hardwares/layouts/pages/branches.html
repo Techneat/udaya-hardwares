@@ -99,27 +99,137 @@
             <p class="text-center py-4 fs-semibold fs-4" style="color: #FFE5B5;">Lorem Ipsum is simply dummy text of the
                 printing and typesetting industry.</p>
         </div>
-        <div class="row">
-            {{ range $index, $element := ( where .Site.RegularPages.ByDate "Type" "branches" ) }}
-            <div class="col-md-4 p-4 branches_div animated-element slide-up" style="animation-delay: {{ mul $index 0.1 }}s;">
-                <div>
+        <div class="row mb-5 g-4">
+            <div class="col-md-4 p-3 branches_div animated-element slide-up" style="color: #FFE5B5;">
+                <div class="pb-4">
                     <img src="/imgs/branches_img.png" alt="" class="w-100">
+                    <p class="text-center fw-semibold">THINGAL NAGAR</p>
                 </div>
-                <div>
-                    <p>{{ .Params.location}}</p>
+                <div class="d-flex align-items-center py-2">
+                    <div class="p-3 me-3" style="background-color: #76520C; border-radius: 50%;">
+                    <i class="bi bi-geo-alt"></i>
+
+                    </div>
+                    <p class="mb-0">Near Bus Stand, THINGAL NAGAR</p>
                 </div>
-                <div>
-                    <p>{{ .Params.number }}</p>
+                <div class="d-flex align-items-center py-2">
+                    <div class="p-3 me-3" style="background-color: #76520C; border-radius: 50%;"> 
+                    <i class="bi bi-telephone"></i>
+
+                    </div>
+                    <p class="mb-0">+91 94425 42298</p>
                 </div>
-                <div>
-                    <p>{{ .Params.email }}</p>
-                </div>
+                <!-- <div class="d-flex align-items-center py-2">
+                    <div class="p-3 me-3" style="background-color: #76520C; border-radius: 50%;">
+                        <i class="bi bi-envelope"></i>
+                    </div>
+                    <p class="mb-0">Email</p>
+                </div> -->
             </div>
-            {{ end }}
-        </div>
-        <div class="row">
-            <div class="col-12 d-flex justify-content-center animated-element fade-in" style="animation-delay: {{ mul (len (where .Site.RegularPages.ByDate "Type" "branches")) 0.1 }}s;">
-                <button class="branches_view_btn fs-4">View More</button>
+            <div class="col-md-4 p-3 branches_div animated-element slide-up" style="color: #FFE5B5;">
+                <div class="pb-4">
+                    <img src="/imgs/branches_img.png" alt="" class="w-100">
+                    <p class="text-center fw-semibold">MARTHANDAM</p>
+                </div>
+                <div class="d-flex align-items-center py-2">
+                    <div class="p-3 me-3" style="background-color: #76520C; border-radius: 50%;">
+                    <i class="bi bi-geo-alt"></i>
+
+                    </div>
+                    <p class="mb-0">Main Road, Pammam, MARTHANDAM</p>
+                </div>
+                <div class="d-flex align-items-center py-2">
+                    <div class="p-3 me-3" style="background-color: #76520C; border-radius: 50%;">
+                    <i class="bi bi-telephone"></i>
+
+                    </div>
+                    <p class="mb-0">+91 75988 72498</p>
+                </div>
+                <!-- <div class="d-flex align-items-center py-2">
+                    <div class="p-3 me-3" style="background-color: #76520C; border-radius: 50%;">
+                        <i class="bi bi-envelope"></i>
+                    </div>
+                    <p class="mb-0">Email</p>
+                </div> -->
+            </div>
+            <div class="col-md-4 p-3 branches_div animated-element slide-up" style="color: #FFE5B5;">
+                <div class="pb-4">
+                    <img src="/imgs/branches_img.png" alt="" class="w-100">
+                    <p class="text-center fw-semibold">NAGERCOIL</p>
+                </div>
+                <div class="d-flex align-items-center py-2">
+                    <div class="p-3 me-3" style="background-color: #76520C; border-radius: 50%;">
+                    <i class="bi bi-geo-alt"></i>
+
+                    </div>
+                    <p class="mb-0">Near Collectorate, K.P.Road, NAGERCOIL</p>
+                </div>
+                <div class="d-flex align-items-center py-2">
+                   <div class="p-3 me-3" style="background-color: #76520C; border-radius: 50%;">
+                    <i class="bi bi-telephone"></i>
+
+                    </div>
+                    <p class="mb-0">+91 94425 22298</p>
+                </div>
+                <!-- <div class="d-flex align-items-center py-2">
+                    <div class="p-3 me-3" style="background-color: #76520C; border-radius: 50%;">
+                        <i class="bi bi-envelope"></i>
+                    </div>
+                    <p class="mb-0">Email</p>
+                </div> -->
+            </div>
+            <div class="col-md-4 p-3 branches_div animated-element slide-up" style="color: #FFE5B5;">
+                <div class="pb-4">
+                    <img src="/imgs/branches_img.png" alt="" class="w-100">
+                    <p class="text-center fw-semibold">VETTURNIMADAM</p>
+                </div>
+                <div class="d-flex align-items-center py-2">
+                    <div class="p-3 me-3" style="background-color: #76520C; border-radius: 50%;">
+                    <i class="bi bi-geo-alt"></i>
+
+                    </div>
+                    <p class="mb-0">Opp, C.S.I. School, VETTURNIMADAM</p>
+                </div>
+                <div class="d-flex align-items-center py-2">
+                    <div class="p-3 me-3" style="background-color: #76520C; border-radius: 50%;">
+                    <i class="bi bi-telephone"></i>
+
+                    </div>
+                    <p class="mb-0">+91 91509 44698</p>
+                </div>
+                <!-- <div class="d-flex align-items-center py-2">
+                    <div class="p-3 me-3" style="background-color: #76520C; border-radius: 50%;">
+                        <i class="bi bi-envelope"></i>
+                    </div>
+                    <p class="mb-0">Email</p>
+                </div> -->
+            </div>
+            <div class="col-md-4 p-3 branches_div animated-element slide-up" style="color: #FFE5B5;">
+                <div class="pb-4">
+                    <img src="/imgs/branches_img.png" alt="" class="w-100">
+                    <p class="text-center fw-semibold">KARUNGAL</p>
+                </div>
+                <div class="d-flex align-items-center py-2">
+                    <div class="p-3 me-3" style="background-color: #76520C; border-radius: 50%;">
+                    <i class="bi bi-geo-alt"></i>
+
+                    </div>
+                    <p class="mb-0">Main Road, KARUNGAL</p>
+                </div>
+                <div class="d-flex align-items-center py-2">
+                    <div class="p-3 me-3" style="background-color: #76520C; border-radius: 50%;">
+                    <i class="bi bi-telephone"></i>
+
+                    </div>
+                    <p class="mb-0">+91 89034 36398</p>
+                </div>
+                <!-- <div class="d-flex align-items-center py-2">
+                    <div class="p-3 me-3" style="background-color: #76520C; border-radius: 50%;">
+                        <i class="bi bi-envelope"></i>
+                    </div>
+                    
+                    <p class="mb-0">Email</p>
+                </div> -->
             </div>
         </div>
     </div>

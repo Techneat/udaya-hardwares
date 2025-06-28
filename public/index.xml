@@ -254,20 +254,6 @@
       <description></description>
     </item>
     <item>
-      <title>Karungal</title>
-      <link>http://localhost:1313/branches/branch5/</link>
-      <pubDate>Wed, 25 Jun 2025 06:33:16 +0000</pubDate>
-      <guid>http://localhost:1313/branches/branch5/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Vetturnimadam</title>
-      <link>http://localhost:1313/branches/branch4/</link>
-      <pubDate>Wed, 25 Jun 2025 06:33:13 +0000</pubDate>
-      <guid>http://localhost:1313/branches/branch4/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Product Name</title>
       <link>http://localhost:1313/latest-product/product-3/</link>
       <pubDate>Tue, 24 Jun 2025 06:30:17 +0000</pubDate>
@@ -300,27 +286,6 @@
       <link>http://localhost:1313/branches/</link>
       <pubDate>Tue, 10 Jun 2025 06:51:57 +0000</pubDate>
       <guid>http://localhost:1313/branches/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Nagercoil</title>
-      <link>http://localhost:1313/branches/branch3/</link>
-      <pubDate>Fri, 06 Jun 2025 11:40:43 +0000</pubDate>
-      <guid>http://localhost:1313/branches/branch3/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Marthandam</title>
-      <link>http://localhost:1313/branches/branch2/</link>
-      <pubDate>Fri, 06 Jun 2025 11:40:36 +0000</pubDate>
-      <guid>http://localhost:1313/branches/branch2/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Thingal Nagar</title>
-      <link>http://localhost:1313/branches/branch1/</link>
-      <pubDate>Fri, 06 Jun 2025 11:40:27 +0000</pubDate>
-      <guid>http://localhost:1313/branches/branch1/</guid>
       <description></description>
     </item>
     <item>

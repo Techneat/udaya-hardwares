@@ -107,12 +107,6 @@
     <loc>http://localhost:1313/tiles/tile1/</loc>
     <lastmod>2025-06-25T10:18:26+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/branches/branch5/</loc>
-    <lastmod>2025-06-25T06:33:16+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/branches/branch4/</loc>
-    <lastmod>2025-06-25T06:33:13+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/latest-product/</loc>
     <lastmod>2025-06-24T06:30:17+00:00</lastmod>
   </url><url>
@@ -130,15 +124,6 @@
   </url><url>
     <loc>http://localhost:1313/branches/</loc>
     <lastmod>2025-06-10T06:51:57+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/branches/branch3/</loc>
-    <lastmod>2025-06-06T11:40:43+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/branches/branch2/</loc>
-    <lastmod>2025-06-06T11:40:36+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/branches/branch1/</loc>
-    <lastmod>2025-06-06T11:40:27+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/enquiry/</loc>
     <lastmod>2025-06-06T07:18:56+00:00</lastmod>

@@ -5,6 +5,7 @@ body {
     margin: 0;
     min-height: 100vh;
     background-color: #18100B;
+    box-sizing: border-box;
 }
 ul {
     list-style-type: none;
@@ -661,6 +662,9 @@ footer {
         /* border: none; */
         height: 65vh;
     }
+    .vision_mission_div {
+        height: 50vh;
+    }
     .enquiry_hero_banner {
         padding: 1rem 0.5rem;
         max-height: 70vh;
@@ -711,6 +715,18 @@ footer {
         margin-bottom: 8rem;
         height: 100vh;
     }
+    .vision_mission_div {
+        padding: 3rem;
+        padding-top: 0;
+    }
+    .vision_mission_box_div {
+        padding: 3rem;
+    }
+    .vision_mission_box {
+        margin-bottom: 3rem;
+    }
+
+    .vision
     .what_we_sell_container {
         top: -10%;
         left: 15%;
@@ -761,6 +777,17 @@ footer {
     .what_we_sell_container {
         top: -10%;
         left: 0%;
+    }
+    .vision_mission_div {
+        /* padding: 3rem; */
+        padding-top: 0;
+        height: 70vh;
+    }
+    .vision_mission_box_div {
+        padding: 0.5rem;
+    }
+    .vision_mission_box {
+        margin-bottom: 1rem;
     }
     .yellow_banner_div {
         height: 75vh;
@@ -1221,3 +1248,68 @@ footer {
     background: #FFBA37;
     background: linear-gradient(103deg, rgba(255, 186, 55, 1) 0%, rgba(153, 112, 33, 1) 75%);
 }
+.filter_btn_filter {
+    background-color: #4D4A4496;
+    color: #FFF1D6;
+}
+
+/* MARQUEE STYLES */
+.marquee-wrapper {
+      overflow: hidden;
+      width: 100%;
+      /* background-color: #fff; */
+      padding: 20px 0;
+      position: relative;
+    }
+
+    .marquee-content {
+      display: flex;
+      width: max-content;
+      animation: marqueeScroll 30s linear infinite;
+    }
+
+    .brand-logo {
+      flex: 0 0 auto;
+      width: 180px; /* Fixed width ensures seamless scrolling */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+    }
+
+    .brand-logo img {
+      max-width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+
+    @keyframes marqueeScroll {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    /* Optional: pause scroll on hover */
+    /* .marquee-wrapper:hover .marquee-content {
+      animation-play-state: paused;
+    } */
+
+
+    .sanitarywares_brands_div {
+        background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url('/imgs/sanitarywares_brands_img.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;    
+    }
+    .hardwares_brands_div {
+        background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url('/imgs/hardwares_brands_img.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;  
+    }
+
+
+    /* Brands, Sanitaryware Carousel */
