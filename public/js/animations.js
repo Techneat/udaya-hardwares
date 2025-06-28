@@ -281,5 +281,500 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // LOGO CAROUSEL ANIMATION
-    
+    // SANITARYWARES CAROUSEL ANIMATION
+    document.addEventListener('DOMContentLoaded', function() {
+
+        // Reusable function to apply/remove middle-active class and scaling
+        // This function is applied to the Home, About, and Sanitarywares carousels.
+        // It is NOT used for the Hardwares/Logo carousel.
+        function updateMiddleSlideEffect(swiperInstance) {
+            // ... (your existing code for updateMiddleSlideEffect) ...
+            swiperInstance.slides.forEach(slide => {
+                slide.classList.remove('middle-active');
+                slide.style.transform = 'scale(0.9)';
+                if(slide.querySelector('img')) slide.querySelector('img').style.transform = 'scale(1)';
+            });
+
+            const visibleSlides = swiperInstance.slides.filter(slide => slide.classList.contains('swiper-slide-visible'));
+
+            let middleVisibleSlide = null;
+
+            if (visibleSlides.length >= 3) {
+                middleVisibleSlide = visibleSlides[1];
+            } else if (visibleSlides.length === 2) {
+                middleVisibleSlide = visibleSlides[0];
+            } else if (visibleSlides.length === 1) {
+                middleVisibleSlide = visibleSlides[0];
+            }
+
+            if (middleVisibleSlide) {
+                middleVisibleSlide.classList.add('middle-active');
+                middleVisibleSlide.style.transform = 'scale(1)';
+                if(middleVisibleSlide.querySelector('img')) {
+                    middleVisibleSlide.querySelector('img').style.transform = 'scale(1.1)';
+                }
+            }
+        }
+
+
+        // --- Home Page Carousel Initialization ---
+        const homeSwiper = new Swiper('.mySanitaryCarousel', {
+            loop: true,
+            effect: 'slide',
+            slidesPerView: 3,
+            spaceBetween: 30,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            on: {
+                init: function () { updateMiddleSlideEffect(this); },
+                slideChangeTransitionEnd: function () { updateMiddleSlideEffect(this); },
+                afterInit: function() { updateMiddleSlideEffect(this); },
+                resize: function() { updateMiddleSlideEffect(this); }
+            },
+            breakpoints: {
+                0: { slidesPerView: 1, spaceBetween: 15 },
+                768: { slidesPerView: 2, spaceBetween: 20 },
+                992: { slidesPerView: 3, spaceBetween: 30 }
+            }
+        });
+
+        // --- About Page Carousel Initialization ---
+        const aboutSwiper = new Swiper('.myAboutPageCarousel', {
+            loop: true,
+            effect: 'slide',
+            slidesPerView: 3,
+            spaceBetween: 30,
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: '.about_carousel_next',
+                prevEl: '.about_carousel_prev',
+            },
+            on: {
+                init: function () { updateMiddleSlideEffect(this); },
+                slideChangeTransitionEnd: function () { updateMiddleSlideEffect(this); },
+                afterInit: function() { updateMiddleSlideEffect(this); },
+                resize: function() { updateMiddleSlideEffect(this); }
+            },
+            breakpoints: {
+                0: { slidesPerView: 1, spaceBetween: 15 },
+                768: { slidesPerView: 2, spaceBetween: 20 },
+                992: { slidesPerView: 3, spaceBetween: 30 }
+            }
+        });
+
+        // --- Hardwares Carousel Initialization (News Ticker Style) ---
+        const hardwaresSwiper = new Swiper('.myHardwaresCarousel', {
+            loop: true,
+            slidesPerView: 4,
+            spaceBetween: 20,
+            autoplay: {
+                delay: 0,
+                disableOnInteraction: false,
+            },
+            speed: 3000,
+            freeMode: true,
+            grabCursor: false,
+            allowTouchMove: false,
+            breakpoints: {
+                0: { slidesPerView: 2, spaceBetween: 10 },
+                576: { slidesPerView: 3, spaceBetween: 15 },
+                768: { slidesPerView: 4, spaceBetween: 20 },
+                992: { slidesPerView: 5, spaceBetween: 25 },
+            }
+        });
+
+        // --- Sanitarywares Carousel Initialization (NEW) ---
+        const sanitarywaresSwiper = new Swiper('.mySanitarywaresCarousel', { // Target the unique class
+            loop: true,
+            effect: 'slide',
+            slidesPerView: 3,
+            spaceBetween: 30,
+            autoplay: {
+                delay: 3800, // Custom delay for sanitarywares
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: '.sanitarywares_carousel_next', // Target unique navigation class
+                prevEl: '.sanitarywares_carousel_prev', // Target unique navigation class
+            },
+            on: { // Apply the middle slide effect to this carousel
+                init: function () { updateMiddleSlideEffect(this); },
+                slideChangeTransitionEnd: function () { updateMiddleSlideEffect(this); },
+                afterInit: function() { updateMiddleSlideEffect(this); },
+                resize: function() { updateMiddleSlideEffect(this); }
+            },
+            breakpoints: {
+                0: { slidesPerView: 1, spaceBetween: 15 },
+                768: { slidesPerView: 2, spaceBetween: 20 },
+                992: { slidesPerView: 3, spaceBetween: 30 }
+            }
+        });
+    });
+
+    // TILES CAROUSEL
+    document.addEventListener('DOMContentLoaded', function() {
+
+        // Reusable function to apply/remove middle-active class and scaling
+        // This function is applied to the Home, About, Sanitarywares, and Tiles carousels.
+        // It is NOT used for the Hardwares/Logo carousel.
+        function updateMiddleSlideEffect(swiperInstance) {
+            // ... (your existing code for updateMiddleSlideEffect) ...
+            swiperInstance.slides.forEach(slide => {
+                slide.classList.remove('middle-active');
+                slide.style.transform = 'scale(0.9)';
+                if(slide.querySelector('img')) slide.querySelector('img').style.transform = 'scale(1)';
+            });
+
+            const visibleSlides = swiperInstance.slides.filter(slide => slide.classList.contains('swiper-slide-visible'));
+
+            let middleVisibleSlide = null;
+
+            if (visibleSlides.length >= 3) {
+                middleVisibleSlide = visibleSlides[1];
+            } else if (visibleSlides.length === 2) {
+                middleVisibleSlide = visibleSlides[0];
+            } else if (visibleSlides.length === 1) {
+                middleVisibleSlide = visibleSlides[0];
+            }
+
+            if (middleVisibleSlide) {
+                middleVisibleSlide.classList.add('middle-active');
+                middleVisibleSlide.style.transform = 'scale(1)';
+                if(middleVisibleSlide.querySelector('img')) {
+                    middleVisibleSlide.querySelector('img').style.transform = 'scale(1.1)';
+                }
+            }
+        }
+
+
+        // --- Home Page Carousel Initialization ---
+        const homeSwiper = new Swiper('.mySanitaryCarousel', {
+            loop: true,
+            effect: 'slide',
+            slidesPerView: 3,
+            spaceBetween: 30,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            on: {
+                init: function () { updateMiddleSlideEffect(this); },
+                slideChangeTransitionEnd: function () { updateMiddleSlideEffect(this); },
+                afterInit: function() { updateMiddleSlideEffect(this); },
+                resize: function() { updateMiddleSlideEffect(this); }
+            },
+            breakpoints: {
+                0: { slidesPerView: 1, spaceBetween: 15 },
+                768: { slidesPerView: 2, spaceBetween: 20 },
+                992: { slidesPerView: 3, spaceBetween: 30 }
+            }
+        });
+
+        // --- About Page Carousel Initialization ---
+        const aboutSwiper = new Swiper('.myAboutPageCarousel', {
+            loop: true,
+            effect: 'slide',
+            slidesPerView: 3,
+            spaceBetween: 30,
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: '.about_carousel_next',
+                prevEl: '.about_carousel_prev',
+            },
+            on: {
+                init: function () { updateMiddleSlideEffect(this); },
+                slideChangeTransitionEnd: function () { updateMiddleSlideEffect(this); },
+                afterInit: function() { updateMiddleSlideEffect(this); },
+                resize: function() { updateMiddleSlideEffect(this); }
+            },
+            breakpoints: {
+                0: { slidesPerView: 1, spaceBetween: 15 },
+                768: { slidesPerView: 2, spaceBetween: 20 },
+                992: { slidesPerView: 3, spaceBetween: 30 }
+            }
+        });
+
+        // --- Hardwares Carousel Initialization (News Ticker Style) ---
+        const hardwaresSwiper = new Swiper('.myHardwaresCarousel', {
+            loop: true,
+            slidesPerView: 4,
+            spaceBetween: 20,
+            autoplay: {
+                delay: 0,
+                disableOnInteraction: false,
+            },
+            speed: 3000,
+            freeMode: true,
+            grabCursor: false,
+            allowTouchMove: false,
+            breakpoints: {
+                0: { slidesPerView: 2, spaceBetween: 10 },
+                576: { slidesPerView: 3, spaceBetween: 15 },
+                768: { slidesPerView: 4, spaceBetween: 20 },
+                992: { slidesPerView: 5, spaceBetween: 25 },
+            }
+        });
+
+        // --- Sanitarywares Carousel Initialization ---
+        const sanitarywaresSwiper = new Swiper('.mySanitarywaresCarousel', {
+            loop: true,
+            effect: 'slide',
+            slidesPerView: 3,
+            spaceBetween: 30,
+            autoplay: {
+                delay: 3800,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: '.sanitarywares_carousel_next',
+                prevEl: '.sanitarywares_carousel_prev',
+            },
+            on: {
+                init: function () { updateMiddleSlideEffect(this); },
+                slideChangeTransitionEnd: function () { updateMiddleSlideEffect(this); },
+                afterInit: function() { updateMiddleSlideEffect(this); },
+                resize: function() { updateMiddleSlideEffect(this); }
+            },
+            breakpoints: {
+                0: { slidesPerView: 1, spaceBetween: 15 },
+                768: { slidesPerView: 2, spaceBetween: 20 },
+                992: { slidesPerView: 3, spaceBetween: 30 }
+            }
+        });
+
+        // --- Tiles Carousel Initialization (NEW) ---
+        const tilesSwiper = new Swiper('.myTilesCarousel', { // Target the unique class
+            loop: true,
+            effect: 'slide',
+            slidesPerView: 3,
+            spaceBetween: 30,
+            autoplay: {
+                delay: 3200, // Custom delay for tiles
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: '.tiles_carousel_next', // Target unique navigation class
+                prevEl: '.tiles_carousel_prev', // Target unique navigation class
+            },
+            on: { // Apply the middle slide effect to this carousel
+                init: function () { updateMiddleSlideEffect(this); },
+                slideChangeTransitionEnd: function () { updateMiddleSlideEffect(this); },
+                afterInit: function() { updateMiddleSlideEffect(this); },
+                resize: function() { updateMiddleSlideEffect(this); }
+            },
+            breakpoints: {
+                0: { slidesPerView: 1, spaceBetween: 15 },
+                768: { slidesPerView: 2, spaceBetween: 20 },
+                992: { slidesPerView: 3, spaceBetween: 30 }
+            }
+        });
+    });
+
+    // KITCHENWARES CAROUSEL
+    document.addEventListener('DOMContentLoaded', function() {
+
+        // Reusable function to apply/remove middle-active class and scaling
+        // This function is applied to the Home, About, Sanitarywares, Tiles, and Kitchenwares carousels.
+        // It is NOT used for the Hardwares/Logo carousel.
+        function updateMiddleSlideEffect(swiperInstance) {
+            // ... (your existing code for updateMiddleSlideEffect) ...
+            swiperInstance.slides.forEach(slide => {
+                slide.classList.remove('middle-active');
+                slide.style.transform = 'scale(0.9)';
+                if(slide.querySelector('img')) slide.querySelector('img').style.transform = 'scale(1)';
+            });
+
+            const visibleSlides = swiperInstance.slides.filter(slide => slide.classList.contains('swiper-slide-visible'));
+
+            let middleVisibleSlide = null;
+
+            if (visibleSlides.length >= 3) {
+                middleVisibleSlide = visibleSlides[1];
+            } else if (visibleSlides.length === 2) {
+                middleVisibleSlide = visibleSlides[0];
+            } else if (visibleSlides.length === 1) {
+                middleVisibleSlide = visibleSlides[0];
+            }
+
+            if (middleVisibleSlide) {
+                middleVisibleSlide.classList.add('middle-active');
+                middleVisibleSlide.style.transform = 'scale(1)';
+                if(middleVisibleSlide.querySelector('img')) {
+                    middleVisibleSlide.querySelector('img').style.transform = 'scale(1.1)';
+                }
+            }
+        }
+
+
+        // --- Home Page Carousel Initialization ---
+        const homeSwiper = new Swiper('.mySanitaryCarousel', {
+            loop: true,
+            effect: 'slide',
+            slidesPerView: 3,
+            spaceBetween: 30,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            on: {
+                init: function () { updateMiddleSlideEffect(this); },
+                slideChangeTransitionEnd: function () { updateMiddleSlideEffect(this); },
+                afterInit: function() { updateMiddleSlideEffect(this); },
+                resize: function() { updateMiddleSlideEffect(this); }
+            },
+            breakpoints: {
+                0: { slidesPerView: 1, spaceBetween: 15 },
+                768: { slidesPerView: 2, spaceBetween: 20 },
+                992: { slidesPerView: 3, spaceBetween: 30 }
+            }
+        });
+
+        // --- About Page Carousel Initialization ---
+        const aboutSwiper = new Swiper('.myAboutPageCarousel', {
+            loop: true,
+            effect: 'slide',
+            slidesPerView: 3,
+            spaceBetween: 30,
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: '.about_carousel_next',
+                prevEl: '.about_carousel_prev',
+            },
+            on: {
+                init: function () { updateMiddleSlideEffect(this); },
+                slideChangeTransitionEnd: function () { updateMiddleSlideEffect(this); },
+                afterInit: function() { updateMiddleSlideEffect(this); },
+                resize: function() { updateMiddleSlideEffect(this); }
+            },
+            breakpoints: {
+                0: { slidesPerView: 1, spaceBetween: 15 },
+                768: { slidesPerView: 2, spaceBetween: 20 },
+                992: { slidesPerView: 3, spaceBetween: 30 }
+            }
+        });
+
+        // --- Hardwares Carousel Initialization (News Ticker Style) ---
+        const hardwaresSwiper = new Swiper('.myHardwaresCarousel', {
+            loop: true,
+            slidesPerView: 4,
+            spaceBetween: 20,
+            autoplay: {
+                delay: 0,
+                disableOnInteraction: false,
+            },
+            speed: 3000,
+            freeMode: true,
+            grabCursor: false,
+            allowTouchMove: false,
+            breakpoints: {
+                0: { slidesPerView: 2, spaceBetween: 10 },
+                576: { slidesPerView: 3, spaceBetween: 15 },
+                768: { slidesPerView: 4, spaceBetween: 20 },
+                992: { slidesPerView: 5, spaceBetween: 25 },
+            }
+        });
+
+        // --- Sanitarywares Carousel Initialization ---
+        const sanitarywaresSwiper = new Swiper('.mySanitarywaresCarousel', {
+            loop: true,
+            effect: 'slide',
+            slidesPerView: 3,
+            spaceBetween: 30,
+            autoplay: {
+                delay: 3800,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: '.sanitarywares_carousel_next',
+                prevEl: '.sanitarywares_carousel_prev',
+            },
+            on: {
+                init: function () { updateMiddleSlideEffect(this); },
+                slideChangeTransitionEnd: function () { updateMiddleSlideEffect(this); },
+                afterInit: function() { updateMiddleSlideEffect(this); },
+                resize: function() { updateMiddleSlideEffect(this); }
+            },
+            breakpoints: {
+                0: { slidesPerView: 1, spaceBetween: 15 },
+                768: { slidesPerView: 2, spaceBetween: 20 },
+                992: { slidesPerView: 3, spaceBetween: 30 }
+            }
+        });
+
+        // --- Tiles Carousel Initialization ---
+        const tilesSwiper = new Swiper('.myTilesCarousel', {
+            loop: true,
+            effect: 'slide',
+            slidesPerView: 3,
+            spaceBetween: 30,
+            autoplay: {
+                delay: 3200,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: '.tiles_carousel_next',
+                prevEl: '.tiles_carousel_prev',
+            },
+            on: {
+                init: function () { updateMiddleSlideEffect(this); },
+                slideChangeTransitionEnd: function () { updateMiddleSlideEffect(this); },
+                afterInit: function() { updateMiddleSlideEffect(this); },
+                resize: function() { updateMiddleSlideEffect(this); }
+            },
+            breakpoints: {
+                0: { slidesPerView: 1, spaceBetween: 15 },
+                768: { slidesPerView: 2, spaceBetween: 20 },
+                992: { slidesPerView: 3, spaceBetween: 30 }
+            }
+        });
+
+        // --- Kitchenwares Carousel Initialization (NEW) ---
+        const kitchenwaresSwiper = new Swiper('.myKitchenwaresCarousel', { // Target the unique class
+            loop: true,
+            effect: 'slide',
+            slidesPerView: 3,
+            spaceBetween: 30,
+            autoplay: {
+                delay: 3500, // Custom delay for kitchenwares
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: '.kitchenwares_carousel_next', // Target unique navigation class
+                prevEl: '.kitchenwares_carousel_prev', // Target unique navigation class
+            },
+            on: { // Apply the middle slide effect to this carousel
+                init: function () { updateMiddleSlideEffect(this); },
+                slideChangeTransitionEnd: function () { updateMiddleSlideEffect(this); },
+                afterInit: function() { updateMiddleSlideEffect(this); },
+                resize: function() { updateMiddleSlideEffect(this); }
+            },
+            breakpoints: {
+                0: { slidesPerView: 1, spaceBetween: 15 },
+                768: { slidesPerView: 2, spaceBetween: 20 },
+                992: { slidesPerView: 3, spaceBetween: 30 }
+            }
+        });
+    });

@@ -39,7 +39,7 @@ a {
 }
 
 .hero_img_1, .hero_img_2{
-    width: 100%;
+    width: 90%;
 }
 
 .hero_img_2 {
@@ -966,5 +966,258 @@ footer {
     }
 }
 
-/* LOGO CAROUSEL */
+.top_selling_section_shop {
+    background-color: #4C350A8F;
+}
 
+
+/* SANITARYWARES CAROUSEL */
+/* ... (Your existing common, home page, about page, and hardwares CSS) ... */
+
+/* --- Sanitarywares Carousel Specific Styles --- */
+
+.sanitarywares-carousel-buttons-row .col-12 {
+    position: relative;
+    height: 60px; /* Ensure enough height for buttons */
+    display: flex;
+    justify-content: space-between; /* Keeps original justify-content-between */
+    align-items: center;
+}
+
+.sanitarywares_carousel_prev {
+    position: absolute;
+    left: 20px; /* Adjust positioning as needed */
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.sanitarywares_carousel_next {
+    position: absolute;
+    right: 20px; /* Adjust positioning as needed */
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.mySanitarywaresCarousel {
+    width: 100%;
+    padding: 0 50px; /* Adjust padding if you want different spacing */
+    margin-top: 2rem; /* Example: space below the buttons row */
+    position: relative;
+}
+
+.sanitarywares_slide {
+    height: 350px; /* Consistent height for these slides */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #231907; /* Example: Consistent dark background */
+    border-radius: 8px;
+    box-sizing: border-box;
+    transform: scale(0.9); /* Default scale for inactive slides */
+    transition: transform 0.3s ease-in-out; /* Smooth transition for scale */
+    padding: 15px; /* Internal padding for content */
+}
+
+.sanitarywares_slide img {
+    height: 300px; /* Adjust image height */
+    object-fit: cover;
+    width: 100%;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* --- Media Queries --- */
+/* Ensure these blocks are updated to apply to the sanitarywares carousel as well */
+
+@media (min-width: 992px) {
+    .mySanitarywaresCarousel { padding: 0 50px; }
+    .sanitarywares_slide { height: 350px; }
+    .sanitarywares_slide img { height: 300px; }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .mySanitarywaresCarousel { padding: 0 30px; }
+    .sanitarywares_slide { height: 300px; }
+    .sanitarywares_slide img { height: 250px; }
+}
+
+@media (max-width: 767px) {
+    .mySanitarywaresCarousel { padding: 0 10px; }
+    .sanitarywares_slide { height: 280px; }
+    .sanitarywares_slide img { height: 230px; }
+    .sanitarywares_carousel_prev { left: 5px; }
+    .sanitarywares_carousel_next { right: 5px; }
+}
+
+/* TILES CAROUSEL */
+/* ... (Your existing common, home page, about page, hardwares, and sanitarywares CSS) ... */
+
+/* --- Tiles Carousel Specific Styles --- */
+
+.tiles-carousel-buttons-row .col-12 {
+    position: relative;
+    height: 60px; /* Ensure enough height for buttons */
+    display: flex;
+    justify-content: space-between; /* Keeps original justify-content-between */
+    align-items: center;
+}
+
+.tiles_carousel_prev {
+    position: absolute;
+    left: 20px; /* Adjust positioning as needed */
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.tiles_carousel_next {
+    position: absolute;
+    right: 20px; /* Adjust positioning as needed */
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.myTilesCarousel {
+    width: 100%;
+    padding: 0 50px; /* Adjust padding if you want different spacing */
+    margin-top: 2rem; /* Example: space below the buttons row */
+    position: relative;
+}
+
+.tiles_slide {
+    height: 350px; /* Consistent height for these slides */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #231907; /* Example: Consistent dark background */
+    border-radius: 8px;
+    box-sizing: border-box;
+    transform: scale(0.9); /* Default scale for inactive slides */
+    transition: transform 0.3s ease-in-out; /* Smooth transition for scale */
+    padding: 15px; /* Internal padding for content */
+}
+
+.tiles_slide img {
+    height: 300px; /* Adjust image height */
+    object-fit: cover;
+    width: 100%;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* --- Media Queries --- */
+/* Ensure these blocks are updated to apply to the tiles carousel as well */
+
+@media (min-width: 992px) {
+    .myTilesCarousel { padding: 0 50px; }
+    .tiles_slide { height: 350px; }
+    .tiles_slide img { height: 300px; }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .myTilesCarousel { padding: 0 30px; }
+    .tiles_slide { height: 300px; }
+    .tiles_slide img { height: 250px; }
+}
+
+@media (max-width: 767px) {
+    .myTilesCarousel { padding: 0 10px; }
+    .tiles_slide { height: 280px; }
+    .tiles_slide img { height: 230px; }
+    .tiles_carousel_prev { left: 5px; }
+    .tiles_carousel_next { right: 5px; }
+}
+
+/* KITCHEN WARES CAROUSEL */
+/* ... (Your existing common, home page, about page, hardwares, sanitarywares, and tiles CSS) ... */
+
+/* --- Kitchenwares Carousel Specific Styles --- */
+
+.kitchenwares-carousel-buttons-row .col-12 {
+    position: relative;
+    height: 60px; /* Ensure enough height for buttons */
+    display: flex;
+    justify-content: space-between; /* Keeps original justify-content-between */
+    align-items: center;
+}
+
+.kitchenwares_carousel_prev {
+    position: absolute;
+    left: 20px; /* Adjust positioning as needed */
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.kitchenwares_carousel_next {
+    position: absolute;
+    right: 20px; /* Adjust positioning as needed */
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.myKitchenwaresCarousel {
+    width: 100%;
+    padding: 0 50px; /* Adjust padding if you want different spacing */
+    margin-top: 2rem; /* Example: space below the buttons row */
+    position: relative;
+}
+
+.kitchenwares_slide {
+    height: 350px; /* Consistent height for these slides */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #231907; /* Example: Consistent dark background */
+    border-radius: 8px;
+    box-sizing: border-box;
+    transform: scale(0.9); /* Default scale for inactive slides */
+    transition: transform 0.3s ease-in-out; /* Smooth transition for scale */
+    padding: 15px; /* Internal padding for content */
+}
+
+.kitchenwares_slide img {
+    height: 300px; /* Adjust image height */
+    object-fit: cover;
+    width: 100%;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* --- Media Queries --- */
+/* Ensure these blocks are updated to apply to the kitchenwares carousel as well */
+
+@media (min-width: 992px) {
+    .myKitchenwaresCarousel { padding: 0 50px; }
+    .kitchenwares_slide { height: 350px; }
+    .kitchenwares_slide img { height: 300px; }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .myKitchenwaresCarousel { padding: 0 30px; }
+    .kitchenwares_slide { height: 300px; }
+    .kitchenwares_slide img { height: 250px; }
+}
+
+@media (max-width: 767px) {
+    .myKitchenwaresCarousel { padding: 0 10px; }
+    .kitchenwares_slide { height: 280px; }
+    .kitchenwares_slide img { height: 230px; }
+    .kitchenwares_carousel_prev { left: 5px; }
+    .kitchenwares_carousel_next { right: 5px; }
+}
+
+.filter_btn {
+    background: #FFBA37;
+    background: linear-gradient(103deg, rgba(255, 186, 55, 1) 0%, rgba(153, 112, 33, 1) 75%);
+}
