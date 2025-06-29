@@ -780,3 +780,87 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     
+
+    document.addEventListener('DOMContentLoaded', function () {
+  const tabLinks = document.querySelectorAll('.tab-link');
+  const tabContents = document.querySelectorAll('.tab-content-item');
+
+  tabLinks.forEach(link => {
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      tabLinks.forEach(l => l.classList.remove('active'));
+      tabContents.forEach(c => {
+        c.classList.remove('active');
+        c.style.display = 'none';
+      });
+
+      const targetId = this.getAttribute('data-tab');
+      const targetContent = document.getElementById(targetId);
+      if (targetContent) {
+        targetContent.style.display = 'flex';
+
+        // Delay to trigger transition
+        setTimeout(() => {
+          targetContent.classList.add('active');
+        }, 10);
+      }
+
+      this.classList.add('active');
+    });
+  });
+});
+
+
+document.querySelectorAll('.tab-link').forEach(link => {
+  link.addEventListener('click', () => {
+    document.querySelectorAll('.we_offer_heading, .we_offer_heading_sub').forEach(row => {
+      row.classList.remove('active-tab-box');
+    });
+    const row = link.closest('.we_offer_heading, .we_offer_heading_sub');
+    if (row) row.classList.add('active-tab-box');
+  });
+});
+
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  const tabs = document.querySelectorAll('.home_popular_products_title_div a');
+  const sections = {
+    ALL: document.querySelector('.home_popular_products_all'),
+    TILES: document.querySelector('.home_popular_products_tiles'),
+    SANITARYWARES: document.querySelector('.home_popular_products_sanitarywares'),
+    KITCHENWARES: document.querySelector('.home_popular_products_kitchenwares'),
+  };
+
+  function resetAnimation(element) {
+    element.classList.remove('animated-element');
+    void element.offsetWidth; // Force reflow
+    element.classList.add('animated-element');
+  }
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', function () {
+      // Reset active tab border
+      tabs.forEach(t => t.classList.remove('active-tab'));
+      tab.classList.add('active-tab');
+
+      // Hide all sections
+      Object.values(sections).forEach(section => section.style.display = 'none');
+
+      // Show selected section and re-trigger animation
+      const category = tab.textContent.trim().toUpperCase();
+      const sectionToShow = sections[category];
+      if (sectionToShow) {
+        sectionToShow.style.display = 'flex'; // or 'block' if not using Bootstrap rows
+        resetAnimation(sectionToShow);
+      }
+    });
+  });
+
+  // Trigger "ALL" tab on page load
+  tabs[0].click();
+});

@@ -1312,4 +1312,59 @@ footer {
     }
 
 
-    /* Brands, Sanitaryware Carousel */
+    /* HOME PAGE, TILES/SANITARYWARES/KITCHENWARES/HARDWARES TABS */
+    .tab-content-item {
+  opacity: 0;
+  transform: translateY(40px); /* slide from bottom */
+  transition: all 0.6s ease-in-out;   /* slower animation */
+  display: none;
+}
+
+.tab-content-item.active {
+  display: flex; /* or block depending on layout */
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Highlight the entire row background when tab is active */
+.we_offer_heading:has(.tab-link.active),
+.we_offer_heading_sub:has(.tab-link.active) {
+  background-color: #C6850A;
+}
+
+.active-tab-box {
+  background-color: #C6850A;
+}
+
+
+
+
+.home_popular_products_all,
+    .home_popular_products_tiles,
+    .home_popular_products_sanitarywares,
+    .home_popular_products_kitchenwares {
+        display: none;
+    }
+
+    .animated-element {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: all 0.4s ease-in-out;
+    }
+
+    .animated-element.show {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+@keyframes slideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.home_popular_products_title_div a.active-tab {
+  border-bottom: 8px solid #C6850A;
+  /* padding-bottom: 6px; */
+}
