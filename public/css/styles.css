@@ -40,12 +40,16 @@ a {
 }
 
 .hero_img_1, .hero_img_2{
-    width: 90%;
+    width: 100%;
+}
+
+.hero_img_1 {
+    top: 4rem;
 }
 
 .hero_img_2 {
-    top: 8rem;
-    left: 8rem;
+    top: 10rem;
+    left: 4rem;
 }
 
 /* END HEADER STYLES */
@@ -180,7 +184,7 @@ footer {
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
-    padding: 3rem 8rem;
+    padding: 3rem 4rem;
 }
 
 .hero_rectangle_img {
@@ -582,15 +586,15 @@ footer {
 @media (min-width: 1200px) and (max-width: 1440px) {
     /* HERO BANNER SECTION */
     .hero_img_1, .hero_img_2 {
-        width: 90%;
+        width: 100%;
     }
     .hero_img_2 {
         top: 8rem;
-        left: 2rem;
+        left: 4rem;
     }
     .hero_img_1 {
         top: 2rem;
-        left: -2rem;
+        left: 0rem;
     }
     .enquiry_hero_banner {
         padding: 1rem 2rem;
@@ -616,15 +620,15 @@ footer {
 @media (min-width: 992px) and (max-width: 1199px) {
     /* HERO BANNER SECTION & HOME PAGE */
     .hero_img_1, .hero_img_2 {
-        width: 90%;
+        width: 100%;
     }
     .hero_img_2 {
         top: 8rem;
-        left: 0rem;
+        left: 7rem;
     }
     .hero_img_1 {
         top: 2rem;
-        left: -3rem;
+        left: 2rem;
     }
     .enquiry_hero_banner {
         padding: 1rem 1rem;
