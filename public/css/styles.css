@@ -61,18 +61,18 @@ footer {
     background: #A67415;
     background: linear-gradient(273deg, rgba(166, 116, 21, 1) 0%, rgba(44, 31, 6, 1) 75%);
     color: #fff;
-    padding: 1.75rem 0 0 0;
+    padding: 0.75rem 0 0 0;
 }
 
 .footer_bottom {
     border-top: 2px solid #fff;
     padding: 1.75rem 0;
-    margin: 2rem 0 0 0;
+    /* margin: 2rem 0 0 0; */
 }
 
-.footer_logo {
+/* .footer_logo {
     height: 200px;
-}
+} */
 
 .footer_icon > i {
     color: #000;
@@ -86,7 +86,7 @@ footer {
     width: 75%;
     display: flex;
     height: 7.5rem;
-    margin-top: 3rem;
+    margin-bottom: 1rem;
 }
 
 /* END FOOTER STYLES */
@@ -267,8 +267,8 @@ footer {
 }
 
 .what_we_sell_container {
-    top: -10%;
-    left: 15%;
+    top: -16%;
+    left: 10%;
 }
 
 .we_offer_img_div {
