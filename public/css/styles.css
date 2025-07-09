@@ -1,3 +1,17 @@
+
+
+.form-control:focus {
+    background-color: inherit !important;
+    color: inherit !important;
+    border-color: inherit !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.form-control {
+    color: #FFF;
+}
+
 /* COMMON STYLES */
 
 body {
@@ -157,7 +171,7 @@ footer {
     border-radius: 4px;
     display: flex;
     text-transform: capitalize;
-    width: 30%;
+    width: 50%;
 }
 
 .enquiry_btn, .contact_btn {
@@ -509,7 +523,7 @@ footer {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 70vh;
+    height: 85vh;
     border-radius: 20px;
 }
 

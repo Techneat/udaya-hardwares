@@ -1,3 +1,17 @@
+// ALL FORMS DATA CLEAR AFTER SUBMISSION
+window.addEventListener('pageshow', function(event) {
+    // This event is triggered even when returning from bfcache (Back/Forward cache)
+    if (event.persisted || window.performance?.navigation?.type === 2) {
+        // Wait for the DOM to be ready before clearing
+        setTimeout(() => {
+            document.querySelectorAll('form').forEach(form => {
+                form.reset();
+            });
+        }, 0);
+    }
+});
+
+
 // SCROLL ON ANIMATION
 document.addEventListener('DOMContentLoaded', () => {
     const animatedElements = document.querySelectorAll('.animated-element');
