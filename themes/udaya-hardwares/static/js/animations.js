@@ -878,3 +878,15 @@ document.addEventListener('DOMContentLoaded', function () {
   // Trigger "ALL" tab on page load
   tabs[0].click();
 });
+
+
+    const heroCarousel = document.querySelector('#heroBackgroundCarousel');
+    if (heroCarousel) {
+        new bootstrap.Carousel(heroCarousel, {
+            interval: 4000,
+            ride: 'carousel',
+            pause: false,
+            wrap: true
+        });
+    }
+

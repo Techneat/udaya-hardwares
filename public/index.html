@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
 <head>
-	<meta name="generator" content="Hugo 0.148.0"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<meta name="generator" content="Hugo 0.148.1"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
 <title>Udaya Hardwares</title>
@@ -37,9 +37,29 @@
 
 <section id="home_section">
 
-    <div class="enquiry_hero_banner">
-        <div class="hero_div">
-            
+    <div class="home_hero_banner">
+        
+        <div id="heroBackgroundCarousel"
+            class="carousel slide carousel-fade position-absolute top-0 start-0 w-100 h-100 z-n1"
+            data-bs-ride="carousel">
+            <div class="carousel-inner w-100 h-100">
+                <div class="carousel-inner w-100 h-100">
+                    <div class="carousel-item active position-relative">
+                        <div class="carousel-overlay-wrapper w-100 h-100 position-absolute top-0 start-0 z-1"></div>
+                        <img src="/imgs/enquiry_hero_img.png" class="d-block w-100 h-100 object-fit-cover"
+                            alt="Background 1">
+                    </div>
+                    <div class="carousel-item position-relative">
+                        <div class="carousel-overlay-wrapper w-100 h-100 position-absolute top-0 start-0 z-1"></div>
+                        <img src="/imgs/enquiry_hero_img_2.png" class="d-block w-100 h-100 object-fit-cover" alt="Background 2">
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+
+        <div class="hero_div position-relative">
             <nav class="navbar bg-body-tertiary navbar-expand-xl py-3 mt-3">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="/">
@@ -53,9 +73,10 @@
                     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
                         aria-labelledby="offcanvasNavbarLabel" style="background-color: #040000;">
                         <div class="offcanvas-header">
-                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img
-                                    src="/imgs/udaya-hardwares-logo.png" alt="udaya_hardwares_logo"
-                                    class="navbar_logo_img"></h5>
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                                <img src="/imgs/udaya-hardwares-logo.png" alt="udaya_hardwares_logo"
+                                    class="navbar_logo_img">
+                            </h5>
                             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"
                                 style="background-color: #FFE5B5;"></button>
                         </div>
@@ -64,81 +85,67 @@
                                 <li class="nav-item pe-5">
                                     <a class="nav-link" href="/" style="border-bottom: 4px solid #A67415">Home</a>
                                 </li>
-                                <li class="nav-item pe-5">
-                                    <a class="nav-link" href="/about-us">About Udaya</a>
-                                </li>
+                                <li class="nav-item pe-5"><a class="nav-link" href="/about-us">About Udaya</a></li>
                                 <li class="nav-item dropdown pe-5">
                                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        Shop
-                                    </a>
+                                        aria-expanded="false">Shop</a>
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item" href="/shop/tiles">Tiles</a></li>
                                         <li><a class="dropdown-item" href="/shop/sanitarywares">Sanitary Wares</a></li>
                                         <li><a class="dropdown-item" href="/shop/kitchenwares">Kitchen Wares</a></li>
                                         <li><a class="dropdown-item" href="/shop/hardwares">Hardwares</a></li>
-
+                                        <li><a class="dropdown-item" href="/shop/plumbings">Plumbings</a></li>
                                     </ul>
                                 </li>
-                                <li class="nav-item pe-5">
-                                    <a class="nav-link" href="/brands">Brands</a>
-                                </li>
-                                <li class="nav-item pe-5">
-                                    <a class="nav-link" href="/branches">Branches</a>
-                                </li>
-                                <li class="nav-item pe-5">
-                                    <a class="nav-link" href="/enquiry">Enquiry</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="/contact-us">Contact Us</a>
-                                </li>
+                                <li class="nav-item pe-5"><a class="nav-link" href="/brands">Brands</a></li>
+                                <li class="nav-item pe-5"><a class="nav-link" href="/branches">Branches</a></li>
+                                <li class="nav-item pe-5"><a class="nav-link" href="/enquiry">Enquiry</a></li>
+                                <li class="nav-item"><a class="nav-link" href="/contact-us">Contact Us</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </nav>
 
-
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 text-start py-4 animated-element slide-left">
                         <p class="enquiry_hero_subheading lh-base" style="color: #fff;">Welcome to Udaya Hardwares</p>
                         <h1 class="enquiry_hero_heading display-4 display-xl-2 fw-medium py-3 pb-4"
-                            style="color: #FAEACB;">Crafting Beautiful Spaces — One Perfect Finish at a Time.</h1>
-                            
+                            style="color: #FAEACB;">
+                            Crafting Beautiful Spaces — One Perfect Finish at a Time.
+                        </h1>
+                        <a href="/about-us" class="enquiry_btn fs-5 fw-semibold">
                         <div class="enquiry_btn_div d-flex justify-content-between animated-element fade-in"
                             style="animation-delay: 0.6s;">
-                            
                             <div class="d-flex align-items-center">
-                                <button type="button" class="enquiry_btn fs-5 fw-semibold"><a href="/about-us">DISCOVER MORE</a></button>
-                            </div>
-                            <div>
-
+                                
+                                    DISCOVER MORE
+                                
                             </div>
                             <div class="d-flex align-items-center">
                                 <i class="bi bi-arrow-right fs-3"></i>
                             </div>
-                            
                         </div>
-                        
+                        </a>
                     </div>
                     <div class="col-md-3 animated-element slide-left ">
                         <div class="position-relative w-100">
                             <img src="/imgs/hero_img_1.png" alt="" class="hero_img_1 position-absolute">
                             <img src="/imgs/hero_banner_img_2.png" alt="" class="hero_img_2 position-absolute">
                         </div>
-                        
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
+
     <div class="home_about_section py-md-5 my-md-5">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 animated-element slide-right align-self-center d-none d-md-block">
-                    <img src="/imgs/home_about_section_img.png" alt="" class="w-100">
+                    <img src="/imgs/home-about-section-img.png" alt="" class="w-100">
                 </div>
                 <div class="col-md-6 animated-element slide-left">
                     <div class="row">
@@ -198,7 +205,7 @@
                                 <p class="text-start fs-5 fw-semibold mb-2" style="color: #FFE5B5;">Comprehensive
                                     Solutions for Every Space:</p>
                                 <p class="text-start fs-6" style="color: #FFE5B5;">We specialize in premium Tiles,
-                                    Sanitaryware, Kitchen fittings, and Paints — everything needed for the perfect
+                                    Sanitaryware, Kitchen fittings, Hardwares, Plumbings and more — everything needed for the perfect
                                     finish. Our showrooms are designed to inspire, offering a curated selection backed
                                     by expert guidance.</p>
                             </div>
@@ -227,30 +234,46 @@
                 
                 <div class="col-md-4 animated-element slide-right">
                     <div class="row" style="color: #fff; background-color: #040000;">
-                        <div class="col-12 d-flex py-5 we_offer_heading fw-semibold">
-                            <a href="javascript:void(0)" class="d-flex tab-link active" data-tab="tiles">
+                        
+                            <a href="javascript:void(0)" class="d-flex tab-link active we_offer_heading" data-tab="tiles">
+                                <div class="col-12 d-flex py-4 we_offer_heading fw-semibold">
                                 <p class="pe-3 mb-0 ps-3" style="border-left: 8px solid #C6850A;">01</p>
                                 <p class="mb-0">TILES</p>
+                                </div>
                             </a>
-                        </div>
-                        <div class="col-12 d-flex py-5 we_offer_heading fw-semibold">
-                            <a href="javascript:void(0)" class="d-flex tab-link" data-tab="sanitary">
+                        
+                        
+                            <a href="javascript:void(0)" class="d-flex tab-link we_offer_heading" data-tab="sanitary">
+                                <div class="col-12 d-flex py-4 we_offer_heading fw-semibold">
                                 <p class="pe-3 mb-0 ps-3" style="border-left: 8px solid #C6850A;">02</p>
                                 <p class="mb-0">SANITARYWARES</p>
+                                </div>
                             </a>
-                        </div>
-                        <div class="col-12 d-flex py-5 fw-semibold we_offer_heading">
-                            <a href="javascript:void(0)" class="d-flex tab-link" data-tab="kitchen">
+                        
+                        
+                            <a href="javascript:void(0)" class="d-flex tab-link we_offer_heading" data-tab="kitchen">
+                                <div class="col-12 d-flex py-4 fw-semibold we_offer_heading">
                                 <p class="pe-3 mb-0 ps-3" style="border-left: 8px solid #C6850A;">03</p>
                                 <p class="mb-0">KITCHENWARES</p>
+                                </div>
                             </a>
-                        </div>
-                        <div class="col-12 d-flex py-5 ps-0 fw-semibold we_offer_heading_sub">
-                            <a href="javascript:void(0)" class="d-flex tab-link" data-tab="hardware">
+                        
+                        
+                            <a href="javascript:void(0)" class="d-flex tab-link we_offer_heading" data-tab="hardware">
+                                <div class="col-12 d-flex py-4 ps-0 fw-semibold we_offer_heading">
                                 <p class="pe-3 mb-0 ps-3" style="border-left: 8px solid #C6850A;">04</p>
                                 <p class="mb-0">HARDWARES</p>
+                                </div>
                             </a>
-                        </div>
+                        
+                        
+                            <a href="javascript:void(0)" class="d-flex tab-link we_offer_heading" data-tab="plumbing">
+                                <div class="col-12 d-flex py-4 ps-0 fw-semibold we_offer_heading_sub">
+                                <p class="pe-3 mb-0 ps-3" style="border-left: 8px solid #C6850A;">05</p>
+                                <p class="mb-0">PLUMBINGS</p>
+                                </div>
+                            </a>
+                        
                     </div>
                 </div>
 
@@ -307,7 +330,7 @@
                     
                     <div class="row tab-content-item" id="hardware" style="display: none;">
                         <div class="col-md-6 d-flex flex-column align-self-center text-center">
-                            <img src="/imgs/we-offer-hardware-img.png" alt="Hardwares" style="width: 80%;">
+                            <img src="/imgs/plumbing-slant-img.png" alt="Hardwares" style="width: 80%;">
                         </div>
                         <div class="col-md-6 d-flex flex-column align-self-center" style="color: #fff;">
                             <p class="fs-3 fw-semibold">RELIABLE HARDWARES</p>
@@ -317,6 +340,19 @@
                                 performance </p>
                             <p class="fw-semibold" style="color: #FFE5B5;">&#10004; Ideal for residential and commercial
                                 use</p>
+                        </div>
+                    </div>
+
+                    
+                    <div class="row tab-content-item" id="plumbing" style="display: none;">
+                        <div class="col-md-6 d-flex flex-column align-self-center text-center">
+                            <img src="/imgs/we-offer-hardware-img.png" alt="plumbings" style="width: 80%;">
+                        </div>
+                        <div class="col-md-6 d-flex flex-column align-self-center" style="color: #fff;">
+                            <p class="fs-3 fw-semibold">PLUMBING SOLUTIONS</p>
+                            <p>From pipes to valves, discover essential components engineered for seamless water flow and leak-proof connections.</p>
+                            <p class="fw-semibold" style="color: #FFE5B5;">&#10004; Built to withstand pressure, corrosion, and time</p>
+                            <p class="fw-semibold" style="color: #FFE5B5;">&#10004; Suitable for residential, commercial, and industrial systems</p>
                         </div>
                     </div>
                 </div>
@@ -375,7 +411,7 @@
                 </div>
                 <div class="col-md-6 animated-element slide-left align-self-center py-4 py-md-none">
                     <div>
-                        <img src="/imgs/home_why_choose_us_img.png" alt="" class="w-100">
+                        <img src="/imgs/home-why-choose-us-img.png" alt="" class="w-100">
                     </div>
                 </div>
             </div>
@@ -467,6 +503,11 @@
                                 class="w-100">
                             <p style="color: #FFF;" class="fw-semibold mb-0 mt-2 fs-5">HARDWARES</p>
                         </div>
+                        <div class="swiper-slide carousel_img_div">
+                            <img src="/imgs/plumbing-img.jpg" alt="Designer bathtub with chrome fittings"
+                                class="w-100">
+                            <p style="color: #FFF;" class="fw-semibold mb-0 mt-2 fs-5">PLUMBINGS</p>
+                        </div>
                         
                     </div>
                 </div>
@@ -493,9 +534,7 @@
 
 
             <div class="row animated-element slide-up">
-                <div class="col-md-3 text-center home_popular_products_title_div">
-                    <a href="javascript:void(0)" class="category-tab" data-target="all">ALL</a>
-                </div>
+                
                 <div class="col-md-3 text-center home_popular_products_title_div">
                     <a href="javascript:void(0)" class="category-tab" data-target="tiles">TILES</a>
                 </div>
@@ -504,6 +543,9 @@
                 </div>
                 <div class="col-md-3 text-center home_popular_products_title_div">
                     <a href="javascript:void(0)" class="category-tab" data-target="kitchenwares">KITCHENWARES</a>
+                </div>
+                <div class="col-md-3 text-center home_popular_products_title_div">
+                    <a href="javascript:void(0)" class="category-tab" data-target="plumbings">PLUMBINGS</a>
                 </div>
             </div>
             <div class="row g-3 mt-4 home_popular_products_all animated-element">
@@ -536,7 +578,8 @@
                 
                 <div class="col-md-4">
                     <div class="position-relative" style="height: 400px; background-color: #333;">
-                        <img src="/imgs/jaquar/sanitarywares/automatic-rimless-floor-mounted-wc-jaquar.jpeg" alt="" class="w-100 h-100 object-fit-cover">
+                        <img src="/imgs/jaquar/sanitarywares/automatic-rimless-floor-mounted-wc-jaquar.jpeg" alt=""
+                            class="w-100 h-100 object-fit-cover">
                         <div class="position-absolute bottom-0 start-0 end-0 text-center p-2"
                             style="background: rgba(0,0,0,0.6);">
                             <p class="mb-0 fw-semibold text-white">Automatic Rimless Floor Mounted WC</p>
@@ -574,7 +617,8 @@
                 
                 <div class="col-md-4">
                     <div class="position-relative" style="height: 400px; background-color: #333;">
-                        <img src="/imgs/kohler/kitchenwares/ironridge-kitchen-skin-kohler.png" alt="" class="w-100 h-100 object-fit-cover">
+                        <img src="/imgs/kohler/kitchenwares/ironridge-kitchen-skin-kohler.png" alt=""
+                            class="w-100 h-100 object-fit-cover">
                         <div class="position-absolute bottom-0 start-0 end-0 text-center p-2"
                             style="background: rgba(0,0,0,0.6);">
                             <p class="mb-0 fw-semibold text-white">Ironridge Kitchen Sink</p>
@@ -669,7 +713,8 @@
             <div class="row g-3 mt-4 home_popular_products_sanitarywares animated-element">
                 <div class="col-md-4">
                     <div class="position-relative" style="height: 400px; overflow: hidden;">
-                        <img src="/imgs/jaquar/sanitarywares/automatic-rimless-floor-mounted-wc-jaquar.jpeg" alt="" class="w-100 h-100 object-fit-cover">
+                        <img src="/imgs/jaquar/sanitarywares/automatic-rimless-floor-mounted-wc-jaquar.jpeg" alt=""
+                            class="w-100 h-100 object-fit-cover">
                         <div class="position-absolute bottom-0 start-0 end-0 text-center p-2"
                             style="background: rgba(0,0,0,0.6);">
                             <p class="mb-0 fw-semibold text-white">Automatic Rimless Floor Mounted WC</p>
@@ -680,7 +725,8 @@
 
                 <div class="col-md-4">
                     <div class="position-relative" style="height: 400px; overflow: hidden;">
-                        <img src="/imgs/parryware_imgs/sanitarywares/multi-flow-3f-airmix-hand-shower-parryware.jpg" alt="" class="w-100 h-100 object-fit-cover">
+                        <img src="/imgs/parryware_imgs/sanitarywares/multi-flow-3f-airmix-hand-shower-parryware.jpg"
+                            alt="" class="w-100 h-100 object-fit-cover">
                         <div class="position-absolute bottom-0 start-0 end-0 text-center p-2"
                             style="background: rgba(0,0,0,0.6);">
                             <p class="mb-0 fw-semibold text-white">Multi Flow 3F Airmix Hand Shower</p>
@@ -691,7 +737,8 @@
 
                 <div class="col-md-4">
                     <div class="position-relative" style="height: 400px; overflow: hidden;">
-                        <img src="/imgs/kohler/sanitarywares/artifacts-bathtub-kohler.png" alt="" class="w-100 h-100 object-fit-cover">
+                        <img src="/imgs/kohler/sanitarywares/artifacts-bathtub-kohler.png" alt=""
+                            class="w-100 h-100 object-fit-cover">
                         <div class="position-absolute bottom-0 start-0 end-0 text-center p-2"
                             style="background: rgba(0,0,0,0.6);">
                             <p class="mb-0 fw-semibold text-white">Artifacts Bathtub</p>
@@ -702,7 +749,8 @@
 
                 <div class="col-md-4">
                     <div class="position-relative" style="height: 400px; overflow: hidden;">
-                        <img src="/imgs/jaquar/sanitarywares/kubix-prime-combi-system-jaquar.jpeg" alt="" class="w-100 h-100 object-fit-cover">
+                        <img src="/imgs/jaquar/sanitarywares/kubix-prime-combi-system-jaquar.jpeg" alt=""
+                            class="w-100 h-100 object-fit-cover">
                         <div class="position-absolute bottom-0 start-0 end-0 text-center p-2"
                             style="background: rgba(0,0,0,0.6);">
                             <p class="mb-0 fw-semibold text-white">Kubix Prime Combi System</p>
@@ -713,7 +761,8 @@
 
                 <div class="col-md-4">
                     <div class="position-relative" style="height: 400px; overflow: hidden;">
-                        <img src="/imgs/parryware_imgs/sanitarywares/chromotherapy-waterfall-chrome-therapy-led-waterfall-shower.jpg" alt="" class="w-100 h-100 object-fit-cover">
+                        <img src="/imgs/parryware_imgs/sanitarywares/chromotherapy-waterfall-chrome-therapy-led-waterfall-shower.jpg"
+                            alt="" class="w-100 h-100 object-fit-cover">
                         <div class="position-absolute bottom-0 start-0 end-0 text-center p-2"
                             style="background: rgba(0,0,0,0.6);">
                             <p class="mb-0 fw-semibold text-white">CHROMETHERAPY Led Waterfall Shower</p>
@@ -724,7 +773,8 @@
 
                 <div class="col-md-4">
                     <div class="position-relative" style="height: 400px; overflow: hidden;">
-                        <img src="/imgs/viking/sanitaryware/rain-shower-round-viking.jpeg" alt="" class="w-100 h-100 object-fit-cover">
+                        <img src="/imgs/viking/sanitaryware/rain-shower-round-viking.jpeg" alt=""
+                            class="w-100 h-100 object-fit-cover">
                         <div class="position-absolute bottom-0 start-0 end-0 text-center p-2"
                             style="background: rgba(0,0,0,0.6);">
                             <p class="mb-0 fw-semibold text-white">Rain Shower Round</p>
@@ -738,7 +788,8 @@
             <div class="row g-3 mt-4 home_popular_products_kitchenwares animated-element">
                 <div class="col-md-4">
                     <div class="position-relative" style="height: 400px; overflow: hidden;">
-                        <img src="/imgs/kohler/kitchenwares/ironridge-kitchen-skin-kohler.png" alt="" class="w-100 h-100 object-fit-cover">
+                        <img src="/imgs/kohler/kitchenwares/ironridge-kitchen-skin-kohler.png" alt=""
+                            class="w-100 h-100 object-fit-cover">
                         <div class="position-absolute bottom-0 start-0 end-0 text-center p-2"
                             style="background: rgba(0,0,0,0.6);">
                             <p class="mb-0 fw-semibold text-white">Ironridge Kitchen Sink</p>
@@ -749,11 +800,12 @@
 
                 <div class="col-md-4">
                     <div class="position-relative" style="height: 400px; overflow: hidden;">
-                        <img src="/imgs/parryware_imgs/kitchenwares/eco-double-bowl-kitchen-sink-with-folded-edge.jpg" alt="" class="w-100 h-100 object-fit-cover">
+                        <img src="/imgs/parryware_imgs/kitchenwares/eco-double-bowl-kitchen-sink-with-folded-edge.jpg"
+                            alt="" class="w-100 h-100 object-fit-cover">
                         <div class="position-absolute bottom-0 start-0 end-0 text-center p-2"
                             style="background: rgba(0,0,0,0.6);">
                             <p class="mb-0 fw-semibold text-white">ECO Double Bowl Kitchen Sink with
-                                    Folded Edge</p>
+                                Folded Edge</p>
                             <p class="mb-0 fw-semibold text-white">(PARRYWARE)</p>
                         </div>
                     </div>
@@ -761,7 +813,8 @@
 
                 <div class="col-md-4">
                     <div class="position-relative" style="height: 400px; overflow: hidden;">
-                        <img src="/imgs/viking/kitchenwares/sink-with-drain-board-viking.jpg" alt="" class="w-100 h-100 object-fit-cover">
+                        <img src="/imgs/viking/kitchenwares/sink-with-drain-board-viking.jpg" alt=""
+                            class="w-100 h-100 object-fit-cover">
                         <div class="position-absolute bottom-0 start-0 end-0 text-center p-2"
                             style="background: rgba(0,0,0,0.6);">
                             <p class="mb-0 fw-semibold text-white">Sink with Drain Board</p>
@@ -772,7 +825,8 @@
 
                 <div class="col-md-4">
                     <div class="position-relative" style="height: 400px; overflow: hidden;">
-                        <img src="/imgs/kohler/kitchenwares/duostrainer-sink-drain-kohler.png" alt="" class="w-100 h-100 object-fit-cover">
+                        <img src="/imgs/kohler/kitchenwares/duostrainer-sink-drain-kohler.png" alt=""
+                            class="w-100 h-100 object-fit-cover">
                         <div class="position-absolute bottom-0 start-0 end-0 text-center p-2"
                             style="background: rgba(0,0,0,0.6);">
                             <p class="mb-0 fw-semibold text-white">Duostrainer Sink Drain</p>
@@ -783,7 +837,8 @@
 
                 <div class="col-md-4">
                     <div class="position-relative" style="height: 400px; overflow: hidden;">
-                        <img src="/imgs/kohler/kitchenwares/edalyn-by-studio-mcgee-kohler.png" alt="" class="w-100 h-100 object-fit-cover">
+                        <img src="/imgs/kohler/kitchenwares/edalyn-by-studio-mcgee-kohler.png" alt=""
+                            class="w-100 h-100 object-fit-cover">
                         <div class="position-absolute bottom-0 start-0 end-0 text-center p-2"
                             style="background: rgba(0,0,0,0.6);">
                             <p class="mb-0 fw-semibold text-white">Edalyn by Studio McGee</p>
@@ -794,7 +849,8 @@
 
                 <div class="col-md-4">
                     <div class="position-relative" style="height: 400px; overflow: hidden;">
-                        <img src="/imgs/kohler/kitchenwares/whitehaven-kitchen-sink-kohler.png" alt="" class="w-100 h-100 object-fit-cover">
+                        <img src="/imgs/kohler/kitchenwares/whitehaven-kitchen-sink-kohler.png" alt=""
+                            class="w-100 h-100 object-fit-cover">
                         <div class="position-absolute bottom-0 start-0 end-0 text-center p-2"
                             style="background: rgba(0,0,0,0.6);">
                             <p class="mb-0 fw-semibold text-white">Whitehaven Kitchen Sink</p>
@@ -832,7 +888,8 @@
                                         <i class="fa-solid fa-phone"></i>
                                     </div>
                                     <div class="ps-4 d-flex align-items-center">
-                                        <p style="color: #fff;" class="mb-0"><a href="tel:+919442542298">+91 94425 42298</a></p>
+                                        <p style="color: #fff;" class="mb-0"><a href="tel:+919442542298">+91 94425
+                                                42298</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -842,7 +899,8 @@
                                         <i class="fa-solid fa-envelope"></i>
                                     </div>
                                     <div class="ps-4 d-flex align-items-center">
-                                        <p style="color: #fff;" class="mb-0"><a href="mailto:udayahard@gmail.com">udayahard@gmail.com</a></p>
+                                        <p style="color: #fff;" class="mb-0"><a
+                                                href="mailto:udayahard@gmail.com">udayahard@gmail.com</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -869,25 +927,37 @@
                         <form action="https://formspree.io/f/xkgbyoal" method="POST">
                             <div class="mb-3">
                                 <label for="contact_name" class="form-label">Your Name</label>
-                                <input type="text" name="name" class="form-control contact_input" id="contact_name" required>
+                                <input type="text" name="name" class="form-control contact_input" id="contact_name"
+                                    required>
                             </div>
                             <div class="mb-3">
                                 <label for="contact_email" class="form-label">Your Email</label>
-                                <input type="email" name="email" class="form-control contact_input" id="contact_email" required>
+                                <input type="email" name="email" class="form-control contact_input" id="contact_email"
+                                    >
+                            </div>
+                            <div class="mb-3">
+                                <label for="contact-number" class="form-label">Your Number</label>
+                                <input type="tel" name="number" class="form-control contact_input" id="contact-number" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="contact-location" class="form-label">Your Location</label>
+                                <input type="text" name="location" class="form-control contact_input" id="contact-location" required>
                             </div>
                             <div class="mb-3">
                                 <textarea name="message" id="contact_message" cols="30" rows="6"
                                     class="form-control p-3 px-4 contact_textarea" placeholder="Your Message"
                                     required></textarea>
                             </div>
-                            <div class="send_msg_btn d-flex align-items-center">
-                                <div>
-                                    <button type="submit" class="contact_btn">Send Message</button>
+                            <button type="submit" class="contact_btn">
+                            <div class="send_msg_btn d-flex align-items-center w-100">
+                                <div class="" style="padding-right: 1rem;">
+                                    <p class="mb-0">Send Message</p>
                                 </div>
                                 <div>
                                     <i class="bi bi-arrow-right fs-3"></i>
                                 </div>
                             </div>
+                            </button>
                         </form>
                     </div>
                 </div>
@@ -992,7 +1062,7 @@
                         <img src="/imgs/udaya-hardwares-logo.png" alt="udaya_hardwares_logo" class="footer_logo_img">
                     </div>
                     <div class="footer_text">
-                        <p class="lh-lg pe-4">Udaya Hardware, located in Nagercoil — the capital of Kanyakumari district — has been a trusted name in the building materials industry for over 40 years. We specialize in high-quality Tiles, Sanitaryware, Kitchen fittings, and Hardwares, offering unmatched service and a wide range of premium products.</p>
+                        <p class="lh-lg pe-4">Udaya Hardware, located in Nagercoil — the capital of Kanyakumari district — has been a trusted name in the building materials industry for over 40 years. We specialize in high-quality Tiles, Sanitaryware, Kitchen fittings, Hardwares, Plumbings and more — offering unmatched service and a wide range of premium products.</p>
                     </div>
                 </div>
                 <div class="col-lg-2 pb-4">
@@ -1000,7 +1070,7 @@
                         <h4 class="fw-semibold">Our Company</h4>
                         <ul>
                             <li class="pt-4"><i class="fa-solid fa-arrow-right pe-4"></i><a href="/about-us">About Udaya</a></li>
-                            <li class="pt-4"><i class="fa-solid fa-arrow-right pe-4"></i><a href="/shop">Our Products</a></li>
+                            
                             <li class="pt-4"><i class="fa-solid fa-arrow-right pe-4"></i><a href="/brands">Our Brands</a></li>
                             
                             <li class="pt-4"><i class="fa-solid fa-arrow-right pe-4"></i><a href="/enquiry">Enquiry</a></li>
@@ -1015,6 +1085,7 @@
                             <li class="pt-4"><i class="fa-solid fa-arrow-right pe-4"></i><a href="/shop/kitchenwares">Kitchenwares</a></li>
                             <li class="pt-4"><i class="fa-solid fa-arrow-right pe-4"></i><a href="/shop/sanitarywares">Sanitarywares</a></li>
                             <li class="pt-4"><i class="fa-solid fa-arrow-right pe-4"></i><a href="/shop/hardwares">Hardwares</a></li>
+                            <li class="pt-4"><i class="fa-solid fa-arrow-right pe-4"></i><a href="/shop/plumbings">Plumbings</a></li>
                         </ul>
                     </div>
                 </div>

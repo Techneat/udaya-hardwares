@@ -38,6 +38,7 @@
                                         <li><a class="dropdown-item" href="/shop/sanitarywares">Sanitary Wares</a></li>
                                         <li><a class="dropdown-item" href="/shop/kitchenwares">Kitchen Wares</a></li>
                                         <li><a class="dropdown-item" href="/shop/hardwares">Hardwares</a></li>
+                                        <li><a class="dropdown-item" href="/shop/plumbings">Plumbings</a></li>
                                         
                                     </ul>
                                 </li>
@@ -114,21 +115,31 @@
                         </div>
                         <div class="mb-3 animated-element slide-up" style="animation-delay: 0.4s;">
                             <label for="enquiry_email" class="form-label">Your Email</label>
-                            <input type="email" class="form-control contact_input" id="enquiry_email" required>
+                            <input type="email" class="form-control contact_input" id="enquiry_email">
                         </div>
                         <div class="mb-3 animated-element slide-up" style="animation-delay: 0.6s;">
+                            <label for="enquiry_number" class="form-label">Your Number</label>
+                            <input type="tel" name="number" class="form-control contact_input" id="enquiry_number" required>
+                        </div>
+                        <div class="md-3 animated-element slide-up" style="animation-delay: 0.8s;">
+                            <label for="enquiry_location" class="form-label">Your Location</label>
+                            <input type="text" name="location" class="form-control contact_input" id="enquiry_location" required>
+                        </div>
+                        <div class="mb-3 animated-element slide-up" style="animation-delay: 1s;">
                             <textarea name="message" id="enquiry_message" cols="30" rows="6"
                                 class="form-control p-3 px-4 contact_textarea" placeholder="Your Message"
                                 required></textarea>
                         </div>
-                        <div class="send_msg_btn d-flex animated-element fade-in align-items-center" style="animation-delay: 0.8s;">
-                            <div>
-                                <button type="submit" class="enquiry_btn">Send Message</button>
+                        <button type="submit" class="contact_btn">
+                            <div class="send_msg_btn d-flex align-items-center w-100">
+                                <div class="" style="padding-right: 1rem;">
+                                    <p class="mb-0">Send Message</p>
+                                </div>
+                                <div>
+                                    <i class="bi bi-arrow-right fs-3"></i>
+                                </div>
                             </div>
-                            <div>
-                                <i class="bi bi-arrow-right fs-3"></i>
-                            </div>
-                        </div>
+                            </button>
                     </form>
                 </div>
             </div>

@@ -201,6 +201,17 @@ footer {
     padding: 3rem 4rem;
 }
 
+.home_hero_banner {
+    height: 100vh;
+    padding: 3rem 4rem;
+}
+
+.carousel-overlay-wrapper {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+    pointer-events: none;
+}
+
+
 .hero_rectangle_img {
     position: absolute;
     top: 0;
@@ -612,7 +623,9 @@ footer {
     }
     .enquiry_hero_banner {
         padding: 1rem 2rem;
-
+    }
+    .home_hero_banner {
+        padding: 1rem 2rem;
     }
     .enquiry_btn_div, .contact_btn_div, .send_msg_btn {
         width: 50%;
@@ -645,6 +658,9 @@ footer {
         left: 2rem;
     }
     .enquiry_hero_banner {
+        padding: 1rem 1rem;
+    }
+    .home_hero_banner {
         padding: 1rem 1rem;
     }
     .enquiry_btn_div, .contact_btn_div, .send_msg_btn {
@@ -687,6 +703,10 @@ footer {
         padding: 1rem 0.5rem;
         max-height: 70vh;
     }
+    .home_hero_banner {
+        padding: 1rem 0.5rem;
+        max-height: 70vh;
+    }
     .enquiry_btn_div, .contact_btn_div {
         width: 60%;
     }
@@ -723,6 +743,11 @@ footer {
         height: 60vh;
     }
     .enquiry_hero_banner {
+        padding: 1rem 0.5rem;
+        max-height: 65vh;
+    }
+
+    .home_hero_banner {
         padding: 1rem 0.5rem;
         max-height: 65vh;
     }
@@ -781,6 +806,10 @@ footer {
         height: 70vh;
     }
     .enquiry_hero_banner {
+        padding: 1rem 0.5rem;
+        height: 75vh;
+    }
+    .home_hero_banner {
         padding: 1rem 0.5rem;
         height: 75vh;
     }
@@ -1271,6 +1300,11 @@ footer {
     color: #FFF1D6;
 }
 
+.filter_btn_filter_tiles:hover {
+    background: #FFBA37;
+    background: linear-gradient(103deg, rgba(255, 186, 55, 1) 0%, rgba(153, 112, 33, 1) 75%);
+}
+
 /* MARQUEE STYLES */
 .marquee-wrapper {
       overflow: hidden;
@@ -1386,3 +1420,23 @@ footer {
   border-bottom: 8px solid #C6850A;
   /* padding-bottom: 6px; */
 }
+
+
+.enquiry_hero_banner {
+    position: relative;
+    overflow: hidden;
+}
+
+.home_hero_banner {
+    position: relative;
+    overflow: hidden;
+}
+
+#heroBackgroundCarousel {
+    z-index: 0;
+}
+
+.carousel-inner img {
+    object-fit: cover;
+}
+
