@@ -40,6 +40,11 @@ theme = 'udaya-hardwares'
     weight = 34
 
     [[menu.main]]
+    name = 'Plumbings'
+    url = '/shop/plumbings'
+    weight = 35
+
+    [[menu.main]]
     name = 'Brands'
     url = '/brands'
     weight = 40
