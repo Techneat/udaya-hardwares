@@ -50,7 +50,7 @@ a {
 }
 
 .navbar_logo_img {
-    width: 16rem;
+    width: 25%;
 }
 
 .hero_img_1, .hero_img_2{
@@ -88,6 +88,11 @@ footer {
     height: 200px;
 } */
 
+.footer_logo {
+    display: flex;
+    justify-content: center;
+}
+
 .footer_icon > i {
     color: #000;
     font-size: 1.5rem;
@@ -97,7 +102,7 @@ footer {
 }
 
 .footer_logo_img {
-    width: 75%;
+    width: 25%;
     display: flex;
     height: 7.5rem;
     margin-bottom: 1rem;
