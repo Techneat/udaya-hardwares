@@ -50,7 +50,11 @@ a {
 }
 
 .navbar_logo_img {
-    width: 25%;
+    width: 15%;
+}
+
+.navbar-brand {
+    width: 50%;
 }
 
 .hero_img_1, .hero_img_2{
@@ -708,6 +712,10 @@ footer {
         padding: 1rem 0.5rem;
         max-height: 70vh;
     }
+
+    .navbar_logo_img {
+        width: 30%;
+    }
     .home_hero_banner {
         padding: 1rem 0.5rem;
         max-height: 70vh;
@@ -750,6 +758,10 @@ footer {
     .enquiry_hero_banner {
         padding: 1rem 0.5rem;
         max-height: 65vh;
+    }
+
+    .navbar_logo_img {
+        width: 30%;
     }
 
     .home_hero_banner {
@@ -848,7 +860,7 @@ footer {
         width: 100%;
     }
     .navbar_logo_img {
-        width: 12rem;
+        width: 30%;
     }
     /* Carousel Specific (Swiper breakpoints will handle slidesPerView) */
     .mySanitaryCarousel, .myAboutPageCarousel {
