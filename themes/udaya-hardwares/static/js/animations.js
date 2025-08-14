@@ -844,10 +844,11 @@ document.querySelectorAll('.tab-link').forEach(link => {
 document.addEventListener('DOMContentLoaded', function () {
   const tabs = document.querySelectorAll('.home_popular_products_title_div a');
   const sections = {
-    ALL: document.querySelector('.home_popular_products_all'),
+    // ALL: document.querySelector('.home_popular_products_all'),
     TILES: document.querySelector('.home_popular_products_tiles'),
     SANITARYWARES: document.querySelector('.home_popular_products_sanitarywares'),
     KITCHENWARES: document.querySelector('.home_popular_products_kitchenwares'),
+    'PLUMBING MATERIALS': document.querySelector('.home_popular_products_hardwares'),
   };
 
   function resetAnimation(element) {
@@ -875,8 +876,10 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  // Trigger "ALL" tab on page load
-  tabs[0].click();
+  const initialTab = document.querySelector('[data-target="tiles"]');
+    if (initialTab) {
+        initialTab.click();
+    }
 });
 
 
